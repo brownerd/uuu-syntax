@@ -1,0 +1,28 @@
+
+.line-number {
+
+  &.cursor-line {
+    background-color: @charcoal;
+    color: @linenos-selection;
+    position: relative;
+
+    // SNTX-SPECIAL > Triangle indicator
+    &:after {
+      border-color: @linenos-selection @linenos-selection @linenos-selection @charcoal;
+      content: "";
+      height: 1px;
+      border-width: .75em; //1rem
+      border-style: solid;
+      position: absolute;
+      right: 0; //-12px
+      top: 0;
+    }
+
+  }
+
+  // XXX unclear
+  &.line-no-selection {
+    background-color: darken(yellow, 5%);
+    color: magenta;
+  }
+}

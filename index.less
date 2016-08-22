@@ -1,0 +1,316 @@
+//@import "./styles/base.less";
+@import "./styles/uuu.less";
+
+@import "./styles/colors.less";
+
+@import "./styles/editor.less";
+@import "./styles/gutter.less";
+@import "./styles/gutter-linter.less";
+@import "./styles/line-number.less";
+@import "./styles/selection.less";
+
+@import "./styles/invisible-characters.less";
+
+@import "./styles/comment.less";
+@import "./styles/indent.less";
+@import "./styles/bracket-matcher.less";
+
+@import "./styles/string.less";
+@import "./styles/errors.less";
+@import "./styles/quotes.less";
+@import "./styles/url.less";
+
+@import "./styles/punctuation.less";
+
+@import "./styles/only-css.less";
+@import "./styles/only-html.less";
+@import "./styles/only-js.less";
+@import "./styles/only-json.less";
+@import "./styles/only-markdown.less";
+
+
+
+@import "./styles/only-programming.less";
+@import "./styles/only-styling.less";
+
+
+
+
+
+.test() {
+  background: @slime;
+  color: magenta;
+}
+
+// Source will select everything that is source code
+.source {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Discovery
+
+
+// This selects many things:
+//   CSS - declarations
+//   HTML - Tags
+//   JS - Funciton name and params, open and closing (), and "."
+//   Jade - Block statement, Include statement, ".",
+//   JSON - it selectes the entire object
+//   MD - it selects everything between ``` ```
+//   PHP - Everything, Tags, Variables, classes, comments
+//   SCSS - Everything. Entire declaration
+//   Stylus - properties and values
+//   Vue- Tags, function names, declarations
+//   Yaml - nothing
+
+
+
+// I'm not sure that I need to style with this yet
+.meta {}
+
+
+
+
+
+// .entity selects a lot of stuff
+//   CSS - Selector name
+//   HTML - Tag name and Attribute name
+//   Jade - Tag name and Attribute name
+//   JS - Variable name and function name
+//   JSON - nothing
+//   MD - Link Text
+//   PHP - Class names NO variable names
+//   SCSS - Selector name
+//   Stylus - Selector name, function name, anything following a "."
+//   Vue - Selector name, tag name,function name
+//   YAML - Property names
+
+.entity {
+  // .test();
+}
+
+
+
+
+
+
+// .name selects
+//   TreeView - text
+//   CSS - Selector name
+//   HTML - Tag name only
+//   Jade - Tag name and function name
+//   JS - Function name and variable name
+//   JSON - nothing
+//   MD - nothing
+//   PHP - Class name
+//   SCSS - Mixin name and Function name
+//   Stylus - Function name
+//   Vue - Tag name, Function name, Selector name
+//   Yaml - Property name
+
+.name {
+  // .test();
+}
+
+
+
+
+
+// .tag selects
+//   CSS - Selector name
+//   HTML - Entire tag
+//   Jade - Entire tag, Blocks and Includes
+//   JS - Nothing
+//   JSON - Nothing
+//   MD - Nothing
+//   PHP - Nothing except HTML in PHP
+//   SCSS - Nothing
+//   Stylus - Nothing
+//   Vue - Selector name, tag name,function name
+//   YAML - Property names
+
+.tag {
+  // .test();
+}
+
+
+
+
+
+
+
+// .section selects
+//   CSS - {} ()
+//   HTML -
+//   Jade -
+//   JS -
+//   JSON -
+//   MD -
+//   PHP - <?php ?> {} []
+//   SCSS - {} []
+//   Stylus - ()
+//   Vue - {} on style sections
+//   YAML - Nothing
+
+.section {
+  // .test();
+}
+
+
+
+
+// .support selects
+//   CSS - Property and value strings
+//   HTML - Nothing
+//   Jade - Nothing
+//   JS - require, module, export, log, method names
+//   JSON - None
+//   MD - None
+//   PHP - define, echo, array, built-in functions
+//   SCSS - true, function names
+//   Stylus - Property name
+//   Vue - {} on style sections
+//   YAML - Nothing
+
+.support {
+  // .test();
+}
+
+
+
+
+// .type selects
+//   CSS - Property name
+//   HTML - Nothing
+//   Jade - block, include, if, each, var keywords
+//   JS - function, var, console, =>, Error keywords
+//   JSON - None
+//   MD - None
+//   PHP - class, function keywords
+//   SCSS - Property names
+//   Stylus - Property name
+//   Vue - Nothing
+//   YAML - Nothing
+
+.type {
+  // .test();
+}
+
+
+// .constant selects
+//   CSS - bold, italics, underline, auto keywords
+//   HTML - html Entities
+//   Jade - ( and )
+//   JS - Numbers, True/False, any named const
+//   JSON - None
+//   MD - None
+//   PHP - Numbers
+//   SCSS - :
+//   Stylus - Numbers, Booleans, null
+//   Vue - Nothing
+//   YAML - :
+
+.constant {
+  // .test();
+}
+
+
+
+
+// HTML page
+
+
+
+// Interpolation
+.interpolation {
+  // .test();
+}
+
+
+
+
+
+// .numeric selects numbers and in some cases units too
+.numeric {
+  //.test();
+}
+
+
+
+
+
+.any-method {}
+
+
+.special-method {}
+
+.class {}
+
+
+.doctype {}
+
+.inline {}
+
+
+.inherited-class {}
+
+.scope {}
+
+.jsx {}
+
+
+.none {}
+
+
+.rgb-value {}
+
+
+.bold {}
+
+.italic {}
+
+
+.inserted {}
+
+.deleted {}
+
+.changed {}
+
+.color {}
+
+.named-color {}
+
+
+
+.character {}
+
+
+// For git diff info. i.e. in the gutter
+// SYNTAX-GIT
+.markup.deleted.git_gutter {
+  .test();
+}
+// SYNTAX-GIT
+.markup.changed.git_gutter {
+  .test();
+}
+// SYNTAX-GIT
+.markup.inserted.git_gutter {
+  .test();
+}
+// SYNTAX-GIT
+.markup.ignored.git_gutter {
+  .test();
+}

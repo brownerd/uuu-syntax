@@ -1,0 +1,27 @@
+atom-text-editor.is-focused, :host(.is-focused) {
+  // XXX unclear
+  .cursor {
+    border-color: @magenta;
+  }
+
+  // :: Selection
+  .selection {
+    .region {
+      background-color: @linenos-selection;
+      // background-image: repeating-linear-gradient(-45deg, @linenos-selection, @linenos-selection 17px, @g 17px, @g 18px);
+    }
+  }
+  // Line selection
+  .line-number .cursor-line-no-selection,
+  .line.cursor-line {
+    background-color: @linenos-selection;
+    // background-image: repeating-linear-gradient(-45deg, @linenos-selection, @linenos-selection 17px, @g 17px, @g 18px);
+
+    //background-color: hsla(60, 100%, 10%, .7);
+    //border-bottom: 1px solid yellow;
+    //mix-blend-mode: overlay;
+    color: @black;
+  }
+}
+
+// hsla(0, 0%, 00%, .1)
