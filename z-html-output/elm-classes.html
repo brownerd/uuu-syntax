@@ -1,0 +1,171 @@
+<div class="lines" style="height: 1073px; background-color: rgba(0, 0, 0, 0);">
+  <div style="isolation: isolate; z-index: 0;">
+    <div style="position: absolute; display: block; z-index: 2; height: 126px; width: 906px; transform: translate3d(0px, 882px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="42"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="keyword operator elm">|</span> <span class="constant other elm">FetchSucceed</span>        <span class="support constant elm">String</span></span>
+      </div>
+      <div class="line" data-screen-row="43"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="keyword operator elm">|</span> <span class="constant other elm">FetchFail</span>        <span class="constant other elm">Http</span><span class="keyword operator elm">.</span><span class="constant other elm">Error</span></span>
+      </div>
+      <div class="line" data-screen-row="44"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="45"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="46"><span class="source elm"><span class="meta function type-declaration elm"><span class="entity name function elm">update</span> <span class="keyword other colon elm">:</span>        <span class="storage type elm">Msg</span> <span class="keyword other arrow elm">-&gt;</span> <span class="storage type elm">Model</span> <span class="keyword other arrow elm">-&gt;</span>        (<span class="storage type elm">Model</span>, <span class="storage type elm">Cmd</span> <span class="storage type elm">Msg</span>)</span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="47"><span class="source elm"><span class="entity name function elm">update </span>msg model <span class="keyword operator elm">=</span></span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 1; height: 126px; width: 906px; transform: translate3d(0px, 1008px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="48"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="keyword other elm">case </span>msg <span class="keyword other elm">of</span></span>
+      </div>
+      <div class="line" data-screen-row="49"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="constant other elm">MorePlease</span>        <span class="keyword operator elm">-&gt;</span></span>
+      </div>
+      <div class="line" data-screen-row="50"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span>(model
+        <span
+        class="punctuation separator comma elm">,</span> getRandomGif model<span class="keyword operator elm">.</span>topic)</span>
+      </div>
+      <div class="line" data-screen-row="51"><span class="source elm"><span class="indent-guide">  </span><span class="indent-guide">  </span><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="52"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="constant other elm">FetchSucceed</span>        newUrl <span class="keyword operator elm">-&gt;</span></span>
+      </div>
+      <div class="line" data-screen-row="53"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span>(
+        <span
+        class="constant other elm">Model</span> model<span class="keyword operator elm">.</span>topic newUrl<span class="punctuation separator comma elm">,</span> <span class="constant other elm">Cmd</span>
+          <span
+          class="keyword operator elm">.</span>none)</span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 0; height: 126px; width: 906px; transform: translate3d(0px, 1890px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="90"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span>
+        <span
+        class="string quoted double elm"><span class="punctuation definition string begin elm">"</span><span class="markup underline link https hyperlink">https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&amp;tag=</span>
+          <span
+          class="punctuation definition string end elm">"</span>
+            </span> <span class="keyword operator elm">++</span> topic</span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 4; height: 126px; width: 906px; transform: translate3d(0px, 630px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="30"><span class="source elm"><span class="entity name function elm">init </span>topic <span class="keyword operator elm">=</span></span>
+      </div>
+      <div class="line" data-screen-row="31"><span class="source elm"><span class="leading-whitespace indent-guide">  </span>( <span class="constant other elm">Model</span> topic <span class="string quoted double elm"><span class="punctuation definition string begin elm">"</span>waiting.gif
+        <span
+        class="punctuation definition string end elm">"</span>
+          </span>
+          </span>
+      </div>
+      <div class="line" data-screen-row="32"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="punctuation separator comma elm">,</span> getRandomGif topic</span>
+      </div>
+      <div class="line" data-screen-row="33"><span class="source elm"><span class="leading-whitespace indent-guide">  </span>)</span>
+      </div>
+      <div class="line" data-screen-row="34"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="35"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 3; height: 126px; width: 906px; transform: translate3d(0px, 756px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="36"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="37"><span class="source elm"><span class="comment line double-dash elm">-- UPDATE</span></span>
+      </div>
+      <div class="line" data-screen-row="38"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="39"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="40"><span class="source elm"><span class="keyword other elm">type </span><span class="constant other elm">Msg</span></span>
+      </div>
+      <div class="line" data-screen-row="41"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="keyword operator elm">=</span> <span class="constant other elm">MorePlease</span></span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 6; height: 126px; width: 906px; transform: translate3d(0px, 378px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="18"><span class="source elm"><span class="indent-guide">  </span><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="19"><span class="source elm"><span class="indent-guide">  </span><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="20"><span class="source elm"><span class="comment line double-dash elm">-- MODEL</span></span>
+      </div>
+      <div class="line" data-screen-row="21"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="22"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="23"><span class="source elm"><span class="keyword other elm">type </span><span class="keyword other elm">alias </span><span class="constant other elm">Model</span>        <span class="keyword operator elm">=</span></span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 5; height: 126px; width: 906px; transform: translate3d(0px, 504px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="24"><span class="source elm"><span class="leading-whitespace indent-guide">  </span>{ topic <span class="keyword operator elm">:</span> <span class="support constant elm">String</span></span>
+      </div>
+      <div class="line" data-screen-row="25"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="punctuation separator comma elm">,</span> gifUrl <span class="keyword operator elm">:</span>        <span class="support constant elm">String</span></span>
+      </div>
+      <div class="line" data-screen-row="26"><span class="source elm"><span class="leading-whitespace indent-guide">  </span>}</span>
+      </div>
+      <div class="line" data-screen-row="27"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="28"><span class="source elm"><span class="indent-guide">  </span></span>
+      </div>
+      <div class="line" data-screen-row="29"><span class="source elm"><span class="meta function type-declaration elm"><span class="entity name function elm">init</span> <span class="keyword other colon elm">:</span>        <span class="support type prelude elm">String</span> <span class="keyword other arrow elm">-&gt;</span> (<span class="storage type elm">Model</span>,
+        <span
+        class="storage type elm">Cmd</span> <span class="storage type elm">Msg</span>)</span>
+          </span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 9; height: 126px; width: 906px; transform: translate3d(0px, 0px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="0"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Html</span>
+        <span
+        class="keyword import elm">exposing</span> <span class="keyword import elm">(..)</span></span>
+          </span>
+      </div>
+      <div class="line" data-screen-row="1"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Html.App</span>        <span class="keyword import elm">as</span> <span class="support other module elm">App</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="2"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Html.Attributes</span>        <span class="keyword import elm">exposing</span> <span class="keyword import elm">(..)</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="3"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Html.Events</span>        <span class="keyword import elm">exposing</span> <span class="keyword import elm">(..)</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="4"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Http</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="5"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Json.Decode</span>        <span class="keyword import elm">as</span> <span class="support other module elm">Json</span></span>
+        </span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 8; height: 126px; width: 906px; transform: translate3d(0px, 126px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="6"><span class="source elm"><span class="meta import elm"><span class="keyword other elm">import</span> <span class="support other module elm">Task</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="7"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="8"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="9"><span class="source elm"></span> </div>
+      <div class="line" data-screen-row="10"><span class="source elm"><span class="entity name function elm">main </span><span class="keyword operator elm">=</span></span>
+      </div>
+      <div class="line" data-screen-row="11"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="constant other elm">App</span><span class="keyword operator elm">.</span>program</span>
+      </div>
+    </div>
+    <div style="position: absolute; display: block; z-index: 7; height: 126px; width: 906px; transform: translate3d(0px, 252px, 0px); background-color: rgba(0, 0, 0, 0);">
+      <div class="highlights"></div>
+      <div class="line" data-screen-row="12"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span>{ init <span class="keyword operator elm">=</span>        init <span class="string quoted double elm"><span class="punctuation definition string begin elm">"</span>cats<span class="punctuation definition string end elm">"</span></span>
+        </span>
+      </div>
+      <div class="line" data-screen-row="13"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="punctuation separator comma elm">,</span>        view <span class="keyword operator elm">=</span> view</span>
+      </div>
+      <div class="line" data-screen-row="14"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="punctuation separator comma elm">,</span>        update <span class="keyword operator elm">=</span> update</span>
+      </div>
+      <div class="line" data-screen-row="15"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span><span class="punctuation separator comma elm">,</span>        subscriptions <span class="keyword operator elm">=</span> subscriptions</span>
+      </div>
+      <div class="line" data-screen-row="16"><span class="source elm"><span class="leading-whitespace indent-guide">  </span><span class="leading-whitespace indent-guide">  </span>}</span>
+      </div>
+      <div class="line" data-screen-row="17"><span class="source elm"><span class="indent-guide">  </span><span class="indent-guide">  </span></span>
+      </div>
+    </div>
+  </div>
+  <div class="cursors blink-off"></div>
+  <content select=".overlayer"></content>
+  <content select=".atom--invisible-block-decoration" style="visibility: hidden; width: 906px;"></content>
+  <pigments-markers class="above-editor-content" style="transform: translate3d(0px, 0px, 0px);"></pigments-markers>
+  <div is="wrap-guide" class="wrap-guide" style="left: 746px; display: block;"></div>
+</div>

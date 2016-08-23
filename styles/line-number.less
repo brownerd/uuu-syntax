@@ -1,12 +1,13 @@
 
 .line-number {
+  padding: 0 1rem;
 
   &.cursor-line {
     background-color: @charcoal;
     color: @linenos-selection;
     position: relative;
 
-    // SNTX-SPECIAL > Triangle indicator
+    // PUNK GUTTER > Triangle indicator
     &:after {
       border-color: @linenos-selection @linenos-selection @linenos-selection @charcoal;
       content: "";
@@ -17,12 +18,18 @@
       right: 0; //-12px
       top: 0;
     }
-
   }
 
-  // XXX unclear
-  &.line-no-selection {
-    background-color: darken(yellow, 5%);
-    color: magenta;
+  &.folded {
+    color: @magenta;
   }
+
+  &:after {
+    // background-color: yellow;
+    // color: cyan;
+  }
+}
+
+.fold-marker:after {
+  color: @magenta;
 }
