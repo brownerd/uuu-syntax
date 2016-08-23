@@ -1,5 +1,6 @@
 {
   "name": "uuu-syntax",
+  "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
   "description": "A short description of your syntax theme",

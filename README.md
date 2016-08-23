@@ -7,11 +7,4 @@ A short description of your theme.
 
 Notes:
 
-```css
-// All of these select URLs that starts with http
-.markup {}
-.underline {}
-.link {}
-.http {}
-.hyperlink {}
-```
+- [12 Language Grammars](http://manual.macromates.com/en/language_grammars.html#naming_conventions)
