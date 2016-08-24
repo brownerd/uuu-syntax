@@ -1,42 +1,46 @@
 // Im not seeing any GIT styles working
+// OK
+// it worked after a hard reload
 
-
-
-// For git diff info. i.e. in the gutter
-// SYNTAX-GIT
-.markup.deleted.git_gutter {
-  .test();
-}
-// SYNTAX-GIT
-.markup.changed.git_gutter {
-  .test();
-}
-// SYNTAX-GIT
-.markup.inserted.git_gutter {
-  .test();
-}
-// SYNTAX-GIT
-.markup.ignored.git_gutter {
-  .test();
-}
-
+// atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shadow .gutter .line-number.git-line-modified {
+//     border-left: 2px solid #de935f;
+// }
 
 //line-number cursor-line cursor-line-no-selection git-line-modified
 
-.git-line-modified {
-  .test();
-}
 
-.git-line-removed {
-  .test();
-}
+atom-text-editor::shadow .gutter .line-number {
 
+  &.git-line-added {
+    //
+    border: 0;
+    box-shadow: inset 5px 0 0 @slime;
+    //border-left: 5px solid @slime;
+    //color: @slime
+  }
+
+  &.git-line-modified {
+    //background-image: repeating-linear-gradient(-45deg, @trans, @trans 7px, @gold 7px, @gold 8px);
+    border: 0;
+    box-shadow: inset 5px 0 0 @gold;
+    //border-left: 5px solid @gold;
+    //color: @gold;
+  }
+
+  &.git-line-removed {
+    //background-image: repeating-linear-gradient(-45deg, @trans, @trans 7px, @red 7px, @red 8px);
+    border: 0;
+    box-shadow: inset 5px 0 0 @red;
+    //border-left: 5px solid @red;
+    //color: @red;
+  }
+}
 
 // I'g guessing that these are GIT related
 // but I'm not seeing any styling yet
 
 .ignored {
-  .test();
+  //.test();
 }
 
 .inserted {
@@ -53,3 +57,24 @@
 
 
 //hello
+
+
+
+
+// For git diff info. i.e. in the gutter
+// SYNTAX-GIT
+.markup.deleted.git_gutter {
+  //.test();
+}
+// SYNTAX-GIT
+.markup.changed.git_gutter {
+  //.test();
+}
+// SYNTAX-GIT
+.markup.inserted.git_gutter {
+  //.test();
+}
+// SYNTAX-GIT
+.markup.ignored.git_gutter {
+  //.test();
+}

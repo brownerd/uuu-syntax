@@ -1,13 +1,87 @@
 {
-  "activateHyperMode": {
-    "description": "Turns the package into hyper mode.",
-    "type": "boolean",
-    "default": false
+  "editor": {
+    "order": 1,
+    "type": "object",
+    "title": "Editor",
+    "properties": {
+      "textColor": {
+        "title": "Text color",
+        "type": "color",
+        "default": "#009688"
+      },
+      "backgroundColor": {
+        "title": "Background color",
+        "type": "color",
+        "default": "#009688"
+      }
+    }
   },
-  "setRange": {
-    "type": "integer",
-    "default": 42,
-    "minium": 1,
-    "maximum": 9000
+  "comments": {
+    "order": 2,
+    "type": "object",
+    "title": "Comments",
+    "properties": {
+      "textColor": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "#009688"
+      },
+      "fontStyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italics"],
+        "default": "normal"
+      }
+    }
+  },
+  "cursor": {
+    "order": 3,
+    "type": "object",
+    "title": "Cursor",
+    "properties": {
+      "backgroundColor": {
+        "title": "Set background color",
+        "description": "Sets the cursor's background color",
+        "type": "color",
+        "default": "#009688"
+      },
+      "cursorShadow": {
+        "title": "Cursor shadow",
+        "description": "Set cursor shadow",
+        "type": "color",
+        "default": "#009688"
+      }
+    }
+  },
+  "gutter": {
+    "order": 4,
+    "type": "object",
+    "title": "Gutter",
+    "properties": {
+      "backgroundColor": {
+        "title": "Set background color",
+        "type": "color",
+        "default": "#009688"
+      },
+      "textColor": {
+        "title": "Text shadow",
+        "type": "color",
+        "default": "#009688"
+      }
+    }
+  },
+  "selectedLine": {
+    "order": 4,
+    "type": "object",
+    "title": "Selected line",
+    "properties": {
+      "backgroundColor": {
+        "title": "Background color",
+        "type": "color",
+        "default": "#009688"
+      }
+    }
   }
 }

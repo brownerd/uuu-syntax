@@ -290,7 +290,7 @@ gulp.task('clog', () => {
 
 
 var ph = function() {
-     if (10 > 9) {
+     if (10 >= 9) {
                     return true;
      }
      else {
