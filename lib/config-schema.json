@@ -7,12 +7,12 @@
       "textColor": {
         "title": "Text color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(51, 51, 51, 1)"
       },
       "backgroundColor": {
         "title": "Background color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(204, 204, 204, 1)"
       }
     }
   },
@@ -25,7 +25,7 @@
         "order": 1,
         "title": "Set text color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(153, 153, 153, 1)"
       },
       "fontStyle": {
         "order": 2,
@@ -45,13 +45,13 @@
         "title": "Set background color",
         "description": "Sets the cursor's background color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(255, 213, 0, 1)"
       },
       "cursorShadow": {
         "title": "Cursor shadow",
         "description": "Set cursor shadow",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(51, 51, 51, 1)"
       }
     }
   },
@@ -63,12 +63,12 @@
       "backgroundColor": {
         "title": "Set background color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(204, 204, 204, 1)"
       },
       "textColor": {
         "title": "Text shadow",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(51, 51, 51, 1)"
       }
     }
   },
@@ -80,8 +80,13 @@
       "backgroundColor": {
         "title": "Background color",
         "type": "color",
-        "default": "#009688"
+        "default": "rgba(0, 255, 102, 1)"
       }
     }
+  },
+  "resetAll": {
+    "type": "boolean",
+    "title": "Reset to default",
+    "default": false
   }
 }
