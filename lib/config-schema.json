@@ -84,9 +84,15 @@
       }
     }
   },
-  "resetAll": {
-    "type": "boolean",
+  "resetAllStyles": {
+    "type": "object",
     "title": "Reset to default",
-    "default": false
+    "properties": {
+      "reset": {
+        "title": "Background color",
+        "type": "boolean",
+        "default": false
+      }
+    }
   }
 }
