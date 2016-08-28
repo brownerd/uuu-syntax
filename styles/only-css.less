@@ -2,6 +2,9 @@
 // CSS - Selectors only
 .selector {
   // .test();
+  color: @selector-color;
+  font-style: @selector-style;
+  font-weight: @selector-weight;
 }
 
 
@@ -35,6 +38,9 @@
 
 .property-name {
   // .test();
+  color: @property-name-color;
+  font-style: @property-name-style;
+  font-weight: @property-name-weight;
 }
 
 
@@ -57,6 +63,9 @@
 
 .property-value {
   // .test();
+  color: @property-value-color;
+  font-style: @property-value-style;
+  font-weight: @property-value-weight;
 }
 
 
@@ -76,8 +85,13 @@
 //   Vue - none
 //   YAML - none
 
-.unit {
+// .keyword and unit collide so both have to be specified
+
+.keyword.unit {
   // .test();
+  color: @unit-color;
+  font-style: @unit-style;
+  font-weight: @unit-weight;
 }
 
 
@@ -85,4 +99,7 @@
 // Selects pseudo-selectors
 .pseudo-element {
   //.test();
+  color: @pseudo-color;
+  font-style: @pseudo-style;
+  font-weight: @pseudo-weight;
 }

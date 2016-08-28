@@ -25,18 +25,94 @@
 @seethru: hsla(0, 0%, 0%, .1);
 
 
-// UI colors
 
-
+// Editor variables
 @editor-text-color: @charcoal;
+@editor-background: @graphite;
+
 @comment-text-color: @lead;
+@comment-text-style: normal;
 
 @cursor-color: @gold;
 @cursor-shadow: @charcoal;
 
-@editor-background: @graphite;
+
 @gutter-background: @editor-background;
+@gutter-text-color: @editor-text-color;
 
 // Current line background-color and
 // line number gutter background-color
 @linenos-selection: @slime;
+
+
+@folded-code-color: @magenta;
+
+@bracket-matcher-background: @magenta;
+
+@indent-line-color: @white;
+
+
+
+// Code styles
+
+// : and ; outside of JS
+@separator-color: @charcoal;
+@separator-weight: normal;
+
+// , and . in JS
+@delimeter-color: @charcoal;
+@delimeter-weight: normal;
+
+// ;
+@terminator-color: @charcoal;
+@terminator-weight: normal;
+
+
+
+// .keyword selects
+//   CSS - %, em, px, rem
+//   SCSS - @return @if !default, all @ based keywords
+//   stylus - if, to, from, =, px, rem, return, unless ?=, +, @media
+//   JS - new, !, !!, import, return, +, :, typeof, switch, case, etc
+//   PHP - switch, case, if, return, else, ->, endif, while, endwhile
+@keyword-color: @charcoal;
+@keyword-style: normal;
+@keyword-weight: normal;
+
+
+// CSS ONLY --------------------------
+
+// .selector selects - CSS only
+@selector-color: @charcoal;
+@selector-style: normal;
+@selector-weight: bold;
+
+
+// .property-name selects - CSS only
+@property-name-color: @charcoal;
+@property-name-style: normal;
+@property-name-weight: normal;
+
+
+
+// .property-value selects - CSS only
+@property-value-color: @charcoal;
+@property-value-style: normal;
+@property-value-weight: normal;
+
+
+
+// Selects pseudo-selectors
+@pseudo-color: @charcoal;
+@pseudo-style: normal;
+@pseudo-weight: normal;
+
+
+// .unit selects CSS only
+//   CSS - em, %, px, rem etc
+//   Less - em, %, px, rem etc
+//   SCSS - em, %, px, rem etc
+//   Stylus - em, %, px, rem etc
+@unit-color: @charcoal;
+@unit-style: normal;
+@unit-weight: normal;

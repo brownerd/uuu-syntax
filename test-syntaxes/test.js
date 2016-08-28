@@ -10,7 +10,7 @@ var hello = function() {
 
 var re = new RegExp("ab+c");
 
-const you = 5;
+const you = [1,2,3,4,5]
 var re = /ab+c/;
 
 var arr = [23];
@@ -42,7 +42,7 @@ var clog2 = function clog2() {
 }
 exports.clog2 = clog2;
 
-},{}]},{},[1])
+},{}[]},{},[1])
 //# sourceMappingURL=app.js.map
 
 
@@ -191,7 +191,7 @@ var bundle = (bundler) => {
         .pipe(source('bundle.js'))
         .pipe(gulp.dest(sendto.dist))
         .pipe(browserSync.stream())
-}
+};
 
 gulp.task('jwatch', () => {
     watchify.args.debug = true;
@@ -224,7 +224,7 @@ gulp.task('serve', ['stylus', 'jade', 'jwatch'], () => {
   gulp.watch(watchPath.stylus, ['stylus'])
   gulp.watch(watchPath.yaml, ['jade'])
   gulp.watch(watchPath.js, ['jwatch'])
-})
+});
 
 
 // Let's make a static YAML DB and make it consumable by Jade

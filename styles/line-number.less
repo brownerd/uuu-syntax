@@ -3,35 +3,48 @@
 // folded
 
 .line-number {
+  padding-right: 1rem;
 
   &.cursor-line {
-    background-color: @charcoal;
+    background-color: @editor-text-color;
     color: @linenos-selection;
     position: relative;
 
     // PUNK GUTTER > Triangle indicator
     &:after {
-      border-color: @linenos-selection @linenos-selection @linenos-selection @charcoal;
+      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-text-color;
       content: "";
       height: 1px;
       border-width: .75em; //1rem
       border-style: solid;
       position: absolute;
-      right: 0; //-12px
-      top: 0;
+      transform: translate(-5px, 0px);
+      //z-index: 0;
+      // right: 0; //-12px
+      // top: 0;
     }
   }
 
   &.folded {
-    color: @magenta;
+    //background-color: @yellow;
+    color: @folded-code-color;
+
+    .icon-right::before {
+      // Move icon above gutter triangle
+      z-index: 100;
+    }
   }
 
   &:after {
-    // background-color: yellow;
-    // color: cyan;
+    //. test();
   }
 }
 
 .fold-marker:after {
-  color: @magenta;
+  color: @folded-code-color;
+  font-size: 2rem;
+  line-height: 0;
+  vertical-align: middle;
 }
+
+// .gutter .line-number.folded .icon-right::before, .gutter:hover .line-number.folded .icon-right::before
