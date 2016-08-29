@@ -13,7 +13,7 @@ This is a static site starter that uses:
 You must **have** Node 4+ *installed*. [Node](https://nodejs.org/en/)
 
 
-
+### One more
 
 ---
 
@@ -89,4 +89,12 @@ ul > li:between(4, 6) {
 ul > li:exactly(4) {
   color: rebeccapurple;
 }
+```
+
+```js
+const watchPath = {
+  jade: './src/jade/**/*.jade',
+  stylus: './src/stylus/**/*.styl',
+  yaml: srcPath.yaml
+};
 ```

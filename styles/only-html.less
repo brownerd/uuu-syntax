@@ -25,13 +25,50 @@
   // .test();
 }
 
-
-.doctype {
+// Selects Doctype
+.tag.doctype.html {
   //.test();
+  color: @doctype-color;
+  font-style: @doctype-style;
+  font-weight: @doctype-weight;
 }
 
+
+
+.tag.html,
+.tag.jade,
+.tag.yaml {
+  //.test();
+  color: @tag-color;
+  font-style: @tag-style;
+  font-weight: @tag-weight;
+}
+
+.attribute-name.html {
+  //.test();
+  color: @attribute-name-color;
+  font-style: @attribute-name-style;
+  font-weight: @attribute-name-weight;
+}
 
 // .inline selects inline elements only
 .inline {
   //.test();
 }
+
+// HTML
+//   - Doctype
+//     - color
+//     - weight
+//
+//   - Tags
+//     - color
+//     - weight
+//
+//   - Attributes
+//     - color
+//     - weight
+//
+//   - Strings
+//     - color
+//     - weight

@@ -1,19 +1,37 @@
+// These are already being styled by the punctuation class
+
+
 // .quoted selects anything in double or single quotes including the quotation marks
-.quoted {
-  // background: yellow;
-  // color: magenta;
-}
+
+.string {
+  &.quoted {
+    //.test();
+    color: @string-color;
+    font-style: @string-style;
+    font-weight: @string-weight;
+  }
 
 
-// .double selects anything in double quotes including the quotation marks
-.double {
-  // background: yellow;
-  // color: magenta;
-}
+  // .double selects anything in double quotes including the quotation marks
+  &.double {
+    //.test();
+    color: @string-color;
+    font-style: @string-style;
+    font-weight: @string-weight;
+  }
 
 
-// .single selects anything in single quotes including the quotation marks
-.single {
-  // background: yellow;
-  // color: magenta;
+  // .single selects anything in single quotes including the quotation marks
+  &.single {
+    //.test();
+    color: @string-color;
+    font-style: @string-style;
+    font-weight: @string-weight;
+  }
+
+  &.unquoted {
+    color: @editor-text-color;
+    font-style: normal;
+    font-weight: normal;
+  }
 }

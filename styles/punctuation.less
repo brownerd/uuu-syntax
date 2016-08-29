@@ -1,56 +1,3 @@
-// .separator selects
-//   CSS - : ;
-//   HTML - Nothing
-//   Jade - =
-//   JS - Nothing
-//   JSON - : ,
-//   MD - None
-//   PHP - Nothing
-//   SCSS - : ,
-//   Stylus - : ,
-//   Vue - Nothing
-//   YAML - :
-
-.separator {
-  // .test();
-
-  color: @separator-color;
-  font-weight: @separator-weight;
-}
-
-
-
-// .terminator selects
-//   CSS - ;
-//   HTML - none
-//   Jade - none
-//   JS - ;
-//   JSON - ;
-//   MD - None
-//   PHP - ;
-//   SCSS - ;
-//   Stylus - ;
-//   Vue - none
-//   YAML - none
-
-.terminator {
-  // .test();
-
-  color: @terminator-color;
-  font-weight: @terminator-weight;
-}
-
-
-
-
-// I probably wont use and of the classes below
-// since they are things that need styling
-
-
-
-
-
-
 // .punctuation selects
 //   CSS - /**/ : ; {}
 //   HTML - <></> "" '' <!-- -->
@@ -71,6 +18,122 @@
   // font-weight: bold;
 }
 
+
+
+// .separator selects
+//   CSS - : ;
+//   HTML - Nothing
+//   Jade - =
+//   JS - Nothing
+//   JSON - : ,
+//   MD - None
+//   PHP - Nothing
+//   SCSS - : ,
+//   Stylus - : ,
+//   Vue - Nothing
+//   YAML - :
+
+.separator {
+  // .test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+
+// .terminator selects
+//   CSS - ;
+//   HTML - none
+//   Jade - none
+//   JS - ;
+//   JSON - ;
+//   MD - None
+//   PHP - ;
+//   SCSS - ;
+//   Stylus - ;
+//   Vue - none
+//   YAML - none
+
+.terminator {
+  // .test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+
+//.delimeter selects "." and "," in JS
+.delimiter {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+
+
+
+// .assignment selects
+//   JS - =
+//   PHP - =
+.keyword.assignment {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+
+// .brace selects {} [] () in JS
+.brace {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+// .bracket selects {} () in JS
+.bracket {
+  //.test();
+  //font-weight: bold;
+}
+
+
+// .curly selects {} in JS
+.curly {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+// .round selects round brackets
+.round {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+//.square selects square brackets
+.square {
+  //.test();
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+.section,
+.definition  {
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
+
+
+// This selects the angle brackes and ""  in HTML
+.punctuation.definition.html,
+.punctuation.definition.html {
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
+}
 
 
 

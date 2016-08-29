@@ -1,4 +1,15 @@
 {
+  "resetAllStyles": {
+    "type": "object",
+    "title": "Reset to default",
+    "properties": {
+      "reset": {
+        "title": "Background color",
+        "type": "boolean",
+        "default": false
+      }
+    }
+  },
   "editor": {
     "order": 1,
     "type": "object",
@@ -120,10 +131,10 @@
       }
     }
   },
-  "separator": {
-    "order": 9,
+  "punctuation": {
+    "order": 20,
     "type": "object",
-    "title": "Separator",
+    "title": "Punctuation - : . , {} () [] ;",
     "properties": {
       "color": {
         "order": 1,
@@ -131,50 +142,15 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "weight": {
+      "fontStyle": {
         "order": 2,
-        "title": "Font weight",
+        "title": "Font style",
         "type": "string",
-        "enum": ["normal", "bold"],
+        "enum": ["normal", "italic"],
         "default": "normal"
-      }
-    }
-  },
-  "delimiter": {
-    "order": 10,
-    "type": "object",
-    "title": "Delimiter",
-    "description": ". and ,",
-    "properties": {
-      "color": {
-        "order": 1,
-        "title": "Set text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
       },
       "weight": {
-        "order": 2,
-        "title": "Font wieght",
-        "type": "string",
-        "enum": ["normal", "bold"],
-        "default": "normal"
-      }
-    }
-  },
-  "terminator": {
-    "order": 10,
-    "type": "object",
-    "title": "Terminator - global",
-    "description": ";",
-    "properties": {
-      "color": {
-        "order": 1,
-        "title": "Set text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
-      },
-      "weight": {
-        "order": 2,
+        "order": 3,
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
@@ -186,7 +162,6 @@
     "order": 11,
     "type": "object",
     "title": "Keyword - global",
-    "description": ";",
     "properties": {
       "color": {
         "order": 1,
@@ -214,7 +189,6 @@
     "order": 12,
     "type": "object",
     "title": "Selector - CSS only",
-    "description": ";",
     "properties": {
       "color": {
         "order": 1,
@@ -242,7 +216,6 @@
     "order": 13,
     "type": "object",
     "title": "Property name - CSS only",
-    "description": ";",
     "properties": {
       "color": {
         "order": 1,
@@ -270,7 +243,6 @@
     "order": 14,
     "type": "object",
     "title": "Property value - CSS only",
-    "description": ";",
     "properties": {
       "color": {
         "order": 1,
@@ -298,7 +270,6 @@
     "order": 15,
     "type": "object",
     "title": "Unit - CSS only",
-    "description": ";",
     "properties": {
       "color": {
         "order": 1,
@@ -322,42 +293,219 @@
       }
     }
   },
-    "pseudo": {
-      "order": 16,
-      "type": "object",
-      "title": "Pseudo selectors - CSS only",
-      "description": ";",
-      "properties": {
-        "color": {
-          "order": 1,
-          "title": "Set text color",
-          "type": "color",
-          "default": "rgba(51, 51, 51, 1)"
-        },
-        "fontStyle": {
-          "order": 2,
-          "title": "Font style",
-          "type": "string",
-          "enum": ["normal", "italic"],
-          "default": "normal"
-        },
-        "weight": {
-          "order": 3,
-          "title": "Font weight",
-          "type": "string",
-          "enum": ["normal", "bold"],
-          "default": "normal"
-        }
-      }
-    },
-  "resetAllStyles": {
+  "pseudo": {
+    "order": 16,
     "type": "object",
-    "title": "Reset to default",
+    "title": "Pseudo selectors - CSS only",
     "properties": {
-      "reset": {
-        "title": "Background color",
-        "type": "boolean",
-        "default": false
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "fontStyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      },
+      "weight": {
+        "order": 3,
+        "title": "Font weight",
+        "type": "string",
+        "enum": ["normal", "bold"],
+        "default": "normal"
+      }
+    }
+  },
+  "doctype": {
+    "order": 17,
+    "type": "object",
+    "title": "Doctype - HTML only",
+    "properties": {
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "fontStyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      },
+      "weight": {
+        "order": 3,
+        "title": "Font weight",
+        "type": "string",
+        "enum": ["normal", "bold"],
+        "default": "normal"
+      }
+    }
+  },
+  "tag": {
+    "order": 18,
+    "type": "object",
+    "title": "Tag - HTML only",
+    "properties": {
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "fontStyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      },
+      "weight": {
+        "order": 3,
+        "title": "Font weight",
+        "type": "string",
+        "enum": ["normal", "bold"],
+        "default": "normal"
+      }
+    }
+  },
+  "attributeName": {
+    "order": 19,
+    "type": "object",
+    "title": "Attribute name - HTML only",
+    "properties": {
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "fontStyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      },
+      "weight": {
+        "order": 3,
+        "title": "Font weight",
+        "type": "string",
+        "enum": ["normal", "bold"],
+        "default": "normal"
+      }
+    }
+  },
+  "class": {
+   "order": 21,
+   "type": "object",
+   "title": "Class - Programming only",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+     }
+   }
+  },
+  "storage": {
+   "order": 22,
+   "type": "object",
+   "title": "Storage - Programming only",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "control": {
+   "order": 23,
+   "type": "object",
+   "title": "Control - return, if, else, case, switch, die, break, while, import, from",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "string": {
+   "order": 23,
+   "type": "object",
+   "title": "Strings",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "italic"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
       }
     }
   }

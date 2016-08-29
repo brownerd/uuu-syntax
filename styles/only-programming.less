@@ -1,6 +1,6 @@
 // http://manual.macromates.com/en/language_grammars.html#naming_conventions
 
-// JS stuff
+// Programming only
 
 // .class selects
 //   CSS - classes
@@ -18,6 +18,9 @@
 
 .class {
   //.test();
+  color: @class-color;
+  font-style: @class-style;
+  font-weight: @class-weight;
 }
 
 
@@ -26,7 +29,7 @@
 //   Less - none
 //   SCSS - none
 //   Stylus - none
-//   HTML - src="", stuff between script tag
+//   HTML - none
 //   Jade - variable name and assignment
 //   JS - function, var, const, let, =>
 //   JSON - none
@@ -34,9 +37,23 @@
 //   PHP - class, private, public, function keywords
 //   Vue - none
 //   YAML - none
-.storage {
+.storage,
+// Sass gets this wrong
+.variable,
+.variable.php,
+.interpolation {
+
   //.test();
+  color: @storage-color;
+  font-style: @storage-style;
+  font-weight: @storage-weight;
 }
+
+// This is a fix for Sass
+.variable > .string.scss {
+  color: @editor-text-color;
+}
+
 
 
 // Selects var and let keyword JS and Jade
@@ -45,56 +62,6 @@
 }
 
 
-// .assignment selects
-//   JS - =
-//   PHP - =
-.assignment {
-  //.test();
-}
-
-
-
-
-// .brace selects {} [] () in JS
-.brace {
-  //.test();
-  //font-weight: bold;
-}
-
-
-// .bracket selects {} () in JS
-.bracket {
-  //.test();
-  //font-weight: bold;
-}
-
-
-// .curly selects {} in JS
-.curly {
-  //.test();
-}
-
-// .round selects round brackets
-.round {
-  //.test();
-}
-
-
-//.square selects square brackets
-.square {
-  //.test();
-}
-
-
-
-
-
-//.delimeter selects "." and "," in JS
-.delimiter {
-  //.test();
-  color: @delimeter-color;
-  font-weight: @delimeter-weight;
-}
 
 
 // .object selects commas in an object and the object name before the delimiter
@@ -134,7 +101,20 @@
 //   PHP - if, else, return, import, case, break
 .control {
   //.test();
+  color: @control-color;
+  font-style: @control-style;
+  font-weight: @control-weight;
 }
+
+
+// right now in seeing this in jade paths
+.control.import.include {
+  //.test();
+  color: @string-color;
+  font-style: @string-style;
+  font-weight: @string-weight;
+}
+
 
 
 //.body selects the function bodies Curly Brackets {}
@@ -205,10 +185,7 @@
 }
 
 
-// .decimal selects numbers in JS
-.decimal {
-  //.test();
-}
+
 
 
 // .arguments selcts the arguments of a function call
@@ -372,7 +349,10 @@
 
 
 
-
+// I probably use this for HTML only
+.attribute-name {
+  // .test();
+}
 
 
 
@@ -456,6 +436,11 @@
   //.test();
 }
 
+
+// .decimal selects numbers in JS
+.decimal {
+  //.test();
+}
 
 
 // .numeric selects numbers and in some cases units too

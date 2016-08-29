@@ -6,8 +6,6 @@ A short description of your theme.
 
 
 
-
-
 Notes:
 
 - [12 Language Grammars](http://manual.macromates.com/en/language_grammars.html#naming_conventions)

@@ -27,7 +27,9 @@
 
 
 // This doesn't seem to select anything
-heading {}
+.heading {
+  font-weight: bold;
+}
 
 .heading-1 {}
 .heading-2 {}
@@ -43,8 +45,66 @@ heading {}
 
 .bold {
   //.test();
+  font-weight: bold;
 }
 
 .italic {
   //.test();
+  font-style: italic;
+}
+
+
+// Preview background
+.markdown-preview:not([data-use-github-style]) {
+  background-color: @white;
+  color: @charcoal;
+
+  & > h1 {
+    color: @charcoal;
+  }
+
+  & > h2 {
+    color: @charcoal;
+  }
+
+  & > h3 {
+    color: @charcoal;
+  }
+
+  & > h4 {
+    color: @charcoal;
+  }
+
+  & > h5 {
+    color: @charcoal;
+  }
+
+  & > h6 {
+    color: @charcoal;
+  }
+
+  & > p {
+    color: @charcoal;
+  }
+
+  & strong {
+    color: @charcoal;
+  }
+
+  & a {
+    color: @blue;
+  }
+
+  & > hr {
+    border-top: 1px solid @charcoal;
+  }
+
+  & atom-text-editor {
+    background-color: @fog;
+  }
+
+  & code {
+    background-color: @fog;
+    color: @editor-text-color;
+  }
 }
