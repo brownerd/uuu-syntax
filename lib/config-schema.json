@@ -643,5 +643,31 @@
        "default": "normal"
       }
     }
+  },
+  "gitGutter": {
+   "type": "object",
+   "title": "Git gutter",
+   "properties": {
+     "lineAddedColor": {
+       "order": 1,
+       "title": "Line added color",
+       "type": "color",
+       "default": "rgba(0, 255, 102, 1)"
+     },
+     "lineModifiedColor": {
+       "order": 2,
+       "title": "Line modified color",
+       "type": "string",
+       "type": "color",
+       "default": "rgba(255, 213, 0, 1)"
+     },
+     "lineRemovedColor": {
+       "order": 3,
+       "title": "Line removed color",
+       "type": "string",
+       "type": "color",
+       "default": "rgba(255, 0, 0, 1)"
+      }
+    }
   }
 }

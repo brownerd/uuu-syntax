@@ -1,7 +1,3 @@
-// Im not seeing any GIT styles working
-// OK
-// it worked after a hard reload
-
 // atom-text-editor .gutter .line-number.git-line-modified, atom-text-editor::shadow .gutter .line-number.git-line-modified {
 //     border-left: 2px solid #de935f;
 // }
@@ -14,25 +10,17 @@ atom-text-editor::shadow .gutter .line-number {
   &.git-line-added {
     //
     border: 0;
-    box-shadow: inset 5px 0 0 @slime;
-    //border-left: 5px solid @slime;
-    //color: @slime
+    box-shadow: inset 5px 0 0 @git-gutter-line-added-color;
   }
 
   &.git-line-modified {
-    //background-image: repeating-linear-gradient(-45deg, @trans, @trans 7px, @gold 7px, @gold 8px);
     border: 0;
-    box-shadow: inset 5px 0 0 @gold;
-    //border-left: 5px solid @gold;
-    //color: @gold;
+    box-shadow: inset 5px 0 0 @git-gutter-line-modified-color;
   }
 
   &.git-line-removed {
-    //background-image: repeating-linear-gradient(-45deg, @trans, @trans 7px, @red 7px, @red 8px);
     border: 0;
-    box-shadow: inset 5px 0 0 @red;
-    //border-left: 5px solid @red;
-    //color: @red;
+    box-shadow: inset 5px 0 0 @git-gutter-line-removed-color;
   }
 }
 
@@ -54,9 +42,6 @@ atom-text-editor::shadow .gutter .line-number {
 .changed {
   //.test();
 }
-
-
-//hello
 
 
 

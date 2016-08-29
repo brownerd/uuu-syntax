@@ -26,46 +26,41 @@
 
 
 
-// Editor variables
+// Editor styles
 @editor-text-color: @charcoal;
 @editor-background: @graphite;
 
+
+// Comment styles
 @comment-text-color: @lead;
 @comment-text-style: normal;
 
+
+// Pacman cursor style
 @cursor-color: @gold;
 @cursor-shadow: @charcoal;
 
 
+// Gutter style
 @gutter-background: @editor-background;
 @gutter-text-color: @editor-text-color;
+
 
 // Current line background-color and
 // line number gutter background-color
 @linenos-selection: @slime;
 
 
+// Folded code style
 @folded-code-color: @magenta;
 
+
+// Bracket matcher style
 @bracket-matcher-background: @magenta;
 
+
+// Indent line color style
 @indent-line-color: @white;
-
-
-
-// Code styles
-
-// : and ; outside of JS
-@separator-color: @charcoal;
-@separator-weight: normal;
-
-// , and . in JS
-@delimeter-color: @charcoal;
-@delimeter-weight: normal;
-
-// ;
-@terminator-color: @charcoal;
-@terminator-weight: normal;
 
 
 
@@ -94,12 +89,10 @@
 @property-name-weight: normal;
 
 
-
 // .property-value selects - CSS only
 @property-value-color: @charcoal;
 @property-value-style: normal;
 @property-value-weight: normal;
-
 
 
 // Selects pseudo-selectors
@@ -120,22 +113,23 @@
 
 // HTML ONLY --------------------------
 
+// Doctyle style
 @doctype-color: @charcoal;
 @doctype-style: normal;
 @doctype-weight: normal;
 
+
+// Tag color - block and inline elements
 @tag-color: @charcoal;
 @tag-style: normal;
 @tag-weight: normal;
 
+
+// Attribute style
 @attribute-name-color: @charcoal;
 @attribute-name-style: normal;
 @attribute-name-weight: normal;
 
-// >< ""
-// @punctuation-html-color: @charcoal;
-// @punctuation-html-style: normal;
-// @punctuation-html-weight: normal;
 
 // Programming ONLY --------------------------
 
@@ -157,7 +151,6 @@
 @class-weight: normal;
 
 
-
 // .storage selects
 //   CSS - none
 //   Less - none
@@ -176,7 +169,6 @@
 @storage-weight: normal;
 
 
-
 // storage modifier - const extends static
 @storage-modifier-color: @charcoal;
 @storage-modifier-style: normal;
@@ -188,6 +180,24 @@
 @punctuation-style: normal;
 @punctuation-weight: bold;
 
+// Punctuation styles are all set to the above
+
+// // : and ; outside of JS
+// @separator-color: @charcoal;
+// @separator-weight: normal;
+//
+// // , and . in JS
+// @delimeter-color: @charcoal;
+// @delimeter-weight: normal;
+//
+// // ;
+// @terminator-color: @charcoal;
+// @terminator-weight: normal;
+
+// >< ""
+// @punctuation-html-color: @charcoal;
+// @punctuation-html-style: normal;
+// @punctuation-html-weight: normal;
 
 
 // Control - return, if, else, case, switch, die, break, while, import, from
@@ -208,12 +218,10 @@
 @operator-weight: bold;
 
 
-
 // Number - + - / * == === !==
 @number-color: @charcoal;
 @number-style: normal;
 @number-weight: normal;
-
 
 
 // Function name
@@ -222,12 +230,10 @@
 @function-name-weight: normal;
 
 
-
 // instance
 @instance-color: @charcoal;
 @instance-style: normal;
 @instance-weight: normal;
-
 
 
 // constructor
@@ -240,3 +246,15 @@
 @regex-color: @charcoal;
 @regex-style: normal;
 @regex-weight: normal;
+
+
+// GIT gutter - line added
+@git-gutter-line-added-color: @slime;
+
+
+// GIT gutter - line modified
+@git-gutter-line-modified-color: @gold;
+
+
+// GIT gutter - line removed
+@git-gutter-line-removed-color: @red;
