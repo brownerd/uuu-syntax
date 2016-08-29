@@ -30,7 +30,7 @@
   "comments": {
     "order": 2,
     "type": "object",
-    "title": "Comments",
+    "title": "Comments - // /**/ <!-- --> # ---",
     "properties": {
       "textColor": {
         "order": 1,
@@ -50,7 +50,7 @@
   "cursor": {
     "order": 3,
     "type": "object",
-    "title": "Cursor",
+    "title": "Cursor - pacman cursor",
     "properties": {
       "backgroundColor": {
         "title": "Set background color",
@@ -86,7 +86,7 @@
   "folded": {
     "order": 5,
     "type": "object",
-    "title": "Folded",
+    "title": "Folded code",
     "properties": {
       "codeColor": {
         "title": "Code color",
@@ -98,7 +98,7 @@
   "selectedLine": {
     "order": 6,
     "type": "object",
-    "title": "Selected line",
+    "title": "Selected line(s)",
     "properties": {
       "backgroundColor": {
         "title": "Background color",
@@ -132,36 +132,9 @@
     }
   },
   "punctuation": {
-    "order": 20,
+    "order": 9,
     "type": "object",
-    "title": "Punctuation - : . , {} () [] ;",
-    "properties": {
-      "color": {
-        "order": 1,
-        "title": "Set text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
-      },
-      "fontStyle": {
-        "order": 2,
-        "title": "Font style",
-        "type": "string",
-        "enum": ["normal", "italic"],
-        "default": "normal"
-      },
-      "weight": {
-        "order": 3,
-        "title": "Font weight",
-        "type": "string",
-        "enum": ["normal", "bold"],
-        "default": "normal"
-      }
-    }
-  },
-  "keyword": {
-    "order": 11,
-    "type": "object",
-    "title": "Keyword - global",
+    "title": "Punctuation - : . , {} () [] ;  and more",
     "properties": {
       "color": {
         "order": 1,
@@ -186,7 +159,7 @@
     }
   },
   "selector": {
-    "order": 12,
+    "order": 11,
     "type": "object",
     "title": "Selector - CSS only",
     "properties": {
@@ -213,7 +186,7 @@
     }
   },
   "propertyName": {
-    "order": 13,
+    "order": 12,
     "type": "object",
     "title": "Property name - CSS only",
     "properties": {
@@ -240,7 +213,7 @@
     }
   },
   "propertyValue": {
-    "order": 14,
+    "order": 13,
     "type": "object",
     "title": "Property value - CSS only",
     "properties": {
@@ -267,7 +240,7 @@
     }
   },
   "unit": {
-    "order": 15,
+    "order": 14,
     "type": "object",
     "title": "Unit - CSS only",
     "properties": {
@@ -294,7 +267,7 @@
     }
   },
   "pseudo": {
-    "order": 16,
+    "order": 15,
     "type": "object",
     "title": "Pseudo selectors - CSS only",
     "properties": {
@@ -321,7 +294,7 @@
     }
   },
   "doctype": {
-    "order": 17,
+    "order": 16,
     "type": "object",
     "title": "Doctype - HTML only",
     "properties": {
@@ -348,7 +321,7 @@
     }
   },
   "tag": {
-    "order": 18,
+    "order": 17,
     "type": "object",
     "title": "Tag - HTML only",
     "properties": {
@@ -375,7 +348,7 @@
     }
   },
   "attributeName": {
-    "order": 19,
+    "order": 18,
     "type": "object",
     "title": "Attribute name - HTML only",
     "properties": {
@@ -402,7 +375,7 @@
     }
   },
   "class": {
-   "order": 21,
+   "order": 19,
    "type": "object",
    "title": "Class - Programming only",
    "properties": {
@@ -429,9 +402,36 @@
    }
   },
   "storage": {
-   "order": 22,
+   "order": 20,
    "type": "object",
-   "title": "Storage - Programming only",
+   "title": "Storage - variables var let const function parameters class public private =>",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "storageModifier": {
+   "order": 21,
+   "type": "object",
+   "title": "Storage modifier - const extends static",
    "properties": {
      "color": {
        "order": 1,
@@ -456,7 +456,7 @@
     }
   },
   "control": {
-   "order": 23,
+   "order": 22,
    "type": "object",
    "title": "Control - return, if, else, case, switch, die, break, while, import, from",
    "properties": {
@@ -485,7 +485,7 @@
   "string": {
    "order": 23,
    "type": "object",
-   "title": "Strings",
+   "title": "Strings - any quoted text",
    "properties": {
      "color": {
        "order": 1,
@@ -499,6 +499,141 @@
        "type": "string",
        "enum": ["normal", "italic"],
        "default": "italic"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "operator": {
+   "order": 24,
+   "type": "object",
+   "title": "Operator and logic  - * + - / > < = === !== >= <=",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "number": {
+   "order": 25,
+   "type": "object",
+   "title": "Numbers - 0-9 and null",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "functionName": {
+   "order": 26,
+   "type": "object",
+   "title": "Function name",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "instance": {
+   "order": 27,
+   "type": "object",
+   "title": "Instance of a function",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "regex": {
+   "order": 28,
+   "type": "object",
+   "title": "Regex - /ab+c/",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontStyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
      },
      "weight": {
        "order": 3,

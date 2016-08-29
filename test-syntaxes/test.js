@@ -3,12 +3,20 @@
 // https://egghead.io/lessons/ecmascript-6-es6-modules-es2015-import-and-export
 
 'use strict';
-var rad = 1234;
-var hello = function() {
-  return 'hello';
+var rad = 1234 * 367;
+var hello = function whatsThis() {
+  return 'hello' + 'again';
 };
 
+let house = require('ramda');
+
+const nada = null;
+
 var re = new RegExp("ab+c");
+
+function Cat (name) {
+  this.name = name;
+};
 
 const you = [1,2,3,4,5]
 var re = /ab+c/;
@@ -17,8 +25,9 @@ var arr = [23];
 
 
 let hi = 3;
-function hello () {
-  return true;
+
+function hello (a, b, c) {
+  return true ;
 }
 
 var _greeting = require('./greeting');
@@ -45,6 +54,50 @@ exports.clog2 = clog2;
 
 //# sourceMappingURL=app.js.map
 
+
+class Rectangle extends Polygon {
+  constructor(height, width) {
+    super(height, width);
+    this.name = 'Rectangle';
+  }
+  // Here, sayName() is a subclassed method which
+  // overrides their superclass method of the same name.
+  sayName() {
+    ChromeSamples.log('Sup! My name is ', this.name + '.');
+    super.sayHistory();
+  }
+}
+
+let r = new Rectangle(50, 60);
+r.sayName();
+
+// Example 5: Defining static methods
+// ===============================================================
+
+// Classes support static members which can be accessed without an
+// instance being present.
+class Triple {
+  // Using the 'static' keyword creates a method which is associated
+  // with a class, but not with an instance of the class.
+  static triple(n) {
+    n = n || 1;
+    return n * 3;
+  }
+}
+
+// super.prop in this example is used for accessing super-properties from
+// a parent class. This works fine in static methods too:
+class BiggerTriple extends Triple {
+  static triple(n) {
+    return super.triple(n) * super.triple(n);
+  }
+}
+
+ChromeSamples.log(Triple.triple());
+ChromeSamples.log(Triple.triple(6));
+ChromeSamples.log(BiggerTriple.triple(3));
+// var tp = new Triple();
+// ChromeSamples.log(tp.triple()); tp.triple is not a function
 
 
 
@@ -291,7 +344,7 @@ gulp.task('clog', () => {
 
 var ph = function() {
      if (10 >= 9) {
-                    return true;
+      return true;
      }
      else {
        return false;

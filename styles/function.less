@@ -1,0 +1,83 @@
+// .class selects
+//   CSS - classes
+//   Less - classes
+//   SCSS - classes
+//   Stylus - classes
+//   HTML - src="", stuff between script tag
+//   Jade - classes
+//   JS - classes
+//   JSON - none
+//   MD - snippets inside ``` ``` blocks
+//   PHP - classes
+//   Vue - none
+//   YAML - none
+
+.class {
+  //.test();
+  color: @class-color;
+  font-style: @class-style;
+  font-weight: @class-weight;
+}
+
+
+// .function selects
+//   JS - function name and keyword but not it's content
+//   SCSS - same
+//   stylus - same
+//   PHP same
+.function.name {
+  //.test();
+  color: @function-name-color;
+  font-style: @function-name-style;
+  font-weight: @function-name-weight;
+}
+
+
+// .parameters selects a functions params
+//   JS - (), (params)
+//   SCSS - ","
+.parameters {
+  //.test();
+  //I'm going to let storage handle this
+}
+
+
+
+// .function-call selects the function call  blah(1, 3);
+.function-call {
+  //.test();
+}
+
+
+// .method-call selects the whole method call
+.method-call {
+  //.test();
+}
+
+
+
+
+
+// .arguments selcts the arguments of a function call
+.arguments {
+  //.test();
+  //im going to let storage handle this
+}
+
+
+// .constructor selects constructors in JS
+.function.name.constructor {
+  //.test();
+  color: @constructor-color;
+  font-style: @constructor-style;
+  font-weight: @constructor-weight;
+}
+
+
+// .instance selects new Error, new RegEx in JS
+.instance {
+  //.test();
+  color: @instance-color;
+  font-style: @instance-style;
+  font-weight: @instance-weight;
+}

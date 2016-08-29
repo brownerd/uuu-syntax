@@ -1,0 +1,43 @@
+// .storage selects
+//   CSS - none
+//   Less - none
+//   SCSS - none
+//   Stylus - none
+//   HTML - none
+//   Jade - variable name and assignment
+//   JS - function, var, const, let, =>
+//   JSON - none
+//   MD - snippets inside ``` ``` blocks
+//   PHP - class, private, public, function keywords
+//   Vue - none
+//   YAML - none
+.storage,
+// Sass gets this wrong
+.variable,
+.variable.php,
+.interpolation {
+
+  //.test();
+  color: @storage-color;
+  font-style: @storage-style;
+  font-weight: @storage-weight;
+}
+
+// This is a fix for Sass
+.variable > .string.scss {
+  color: @editor-text-color;
+}
+
+
+
+// Storage modifier - const extends static
+.storage.modifier {
+  color: @storage-modifier-color;
+  font-style: @storage-modifier-style;
+  font-weight: @storage-modifier-weight;
+}
+
+// Selects var and let keyword JS and Jade
+.var {
+  //.test();
+}
