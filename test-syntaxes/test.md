@@ -97,4 +97,4 @@ const watchPath = {
   stylus: './src/stylus/**/*.styl',
   yaml: srcPath.yaml
 };
-```
+``

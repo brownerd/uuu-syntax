@@ -482,6 +482,26 @@
       }
     }
   },
+  "quotationMark": {
+   "order": 23,
+   "type": "object",
+   "title": "Quotation marks",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set font color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
   "string": {
    "order": 23,
    "type": "object",
