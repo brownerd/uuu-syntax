@@ -50,17 +50,24 @@
   "cursor": {
     "order": 3,
     "type": "object",
-    "title": "Cursor - pacman cursor",
+    "title": "Cursor",
     "properties": {
-      "backgroundColor": {
-        "title": "Set background color",
-        "description": "Sets the cursor's background color",
+      "style": {
+        "order": 1,
+        "title": "Bar, Block or Pacman Cursor style",
+        "type": "string",
+        "enum": ["bar", "block", "pacman"],
+        "default": "pacman"
+      },
+      "color": {
+        "order": 2,
+        "title": "Cursor color",
         "type": "color",
         "default": "rgba(255, 213, 0, 1)"
       },
       "cursorShadow": {
-        "title": "Cursor shadow",
-        "description": "Set cursor shadow",
+        "order": 3,
+        "title": "*Cursor shadow - Pacman cursor only",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       }

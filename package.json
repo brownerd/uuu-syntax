@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "UUU is a syntax that you can style on your own for once!",
+  "description": "A hackable syntax theme that UUU can style",
   "keywords": [
     "syntax",
     "theme"
