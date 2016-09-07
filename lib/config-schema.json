@@ -4,7 +4,7 @@
     "title": "Reset to default",
     "properties": {
       "reset": {
-        "title": "Background color",
+        "title": "Reset to default styles",
         "type": "boolean",
         "default": false
       }
