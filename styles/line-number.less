@@ -6,13 +6,13 @@
   padding-right: 1rem;
 
   &.cursor-line {
-    background-color: @editor-text-color;
+    background-color: @editor-textcolor;
     color: @linenos-selection;
     position: relative;
 
     // PUNK GUTTER > Triangle indicator
     &:after {
-      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-text-color;
+      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-textcolor;
       content: "";
       height: 1px;
       border-width: .75em; //1rem
@@ -27,7 +27,7 @@
 
   &.folded {
     //background-color: @yellow;
-    color: @folded-code-color;
+    color: @folded-codecolor;
 
     .icon-right::before {
       // Move icon above gutter triangle
@@ -42,7 +42,7 @@
 
 
 .fold-marker:after {
-  color: @folded-code-color;
+  color: @folded-codecolor;
   font-size: 2rem;
   line-height: 0;
   vertical-align: middle;

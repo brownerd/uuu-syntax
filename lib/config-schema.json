@@ -15,12 +15,12 @@
     "type": "object",
     "title": "Editor",
     "properties": {
-      "textColor": {
+      "textcolor": {
         "title": "Text color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "backgroundColor": {
+      "backgroundcolor": {
         "title": "Background color",
         "type": "color",
         "default": "rgba(204, 204, 204, 1)"
@@ -32,13 +32,13 @@
     "type": "object",
     "title": "Comments - // /**/ <!-- --> # ---",
     "properties": {
-      "textColor": {
+      "textcolor": {
         "order": 1,
         "title": "Set text color",
         "type": "color",
         "default": "rgba(153, 153, 153, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -65,7 +65,7 @@
         "type": "color",
         "default": "rgba(255, 213, 0, 1)"
       },
-      "cursorShadow": {
+      "shadow": {
         "order": 3,
         "title": "*Cursor shadow - Pacman cursor only",
         "type": "color",
@@ -78,12 +78,12 @@
     "type": "object",
     "title": "Gutter",
     "properties": {
-      "backgroundColor": {
+      "backgroundcolor": {
         "title": "Set background color",
         "type": "color",
         "default": "rgba(204, 204, 204, 1)"
       },
-      "textColor": {
+      "textcolor": {
         "title": "Text color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
@@ -95,43 +95,43 @@
     "type": "object",
     "title": "Folded code",
     "properties": {
-      "codeColor": {
+      "codecolor": {
         "title": "Code color",
         "type": "color",
         "default": "rgba(255, 0, 255, 1)"
       }
     }
   },
-  "selectedLine": {
+  "selectedline": {
     "order": 6,
     "type": "object",
     "title": "Selected line(s)",
     "properties": {
-      "backgroundColor": {
+      "backgroundcolor": {
         "title": "Background color",
         "type": "color",
         "default": "rgba(0, 255, 102, 1)"
       }
     }
   },
-  "bracketMatcher": {
+  "bracketmatcher": {
     "order": 7,
     "type": "object",
     "title": "Bracket Matcher",
     "properties": {
-      "backgroundColor": {
+      "backgroundcolor": {
         "title": "Background color",
         "type": "color",
         "default": "rgba(255, 0, 255, 1)"
       }
     }
   },
-  "indentGuide": {
+  "indentguide": {
     "order": 8,
     "type": "object",
     "title": "Indent guide",
     "properties": {
-      "lineColor": {
+      "linecolor": {
         "title": "Line color",
         "type": "color",
         "default": "rgba(255, 255, 255, 1)"
@@ -149,15 +149,8 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
-        "order": 2,
-        "title": "Font style",
-        "type": "string",
-        "enum": ["normal", "italic"],
-        "default": "normal"
-      },
       "weight": {
-        "order": 3,
+        "order": 2,
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
@@ -176,7 +169,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -192,7 +185,7 @@
       }
     }
   },
-  "propertyName": {
+  "propertyname": {
     "order": 12,
     "type": "object",
     "title": "Property name - CSS only",
@@ -203,7 +196,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -219,7 +212,7 @@
       }
     }
   },
-  "propertyValue": {
+  "propertyvalue": {
     "order": 13,
     "type": "object",
     "title": "Property value - CSS only",
@@ -230,7 +223,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -257,7 +250,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -284,7 +277,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -311,7 +304,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -338,7 +331,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -354,7 +347,7 @@
       }
     }
   },
-  "attributeName": {
+  "attributename": {
     "order": 18,
     "type": "object",
     "title": "Attribute name - HTML only",
@@ -365,7 +358,7 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontStyle": {
+      "fontstyle": {
         "order": 2,
         "title": "Font style",
         "type": "string",
@@ -392,7 +385,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -419,7 +412,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -435,7 +428,7 @@
       }
     }
   },
-  "storageModifier": {
+  "storagemodifier": {
    "order": 21,
    "type": "object",
    "title": "Storage modifier - const extends static",
@@ -446,7 +439,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -473,7 +466,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -489,7 +482,7 @@
       }
     }
   },
-  "quotationMark": {
+  "quotationmark": {
    "order": 23,
    "type": "object",
    "title": "Quotation marks",
@@ -520,7 +513,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -547,13 +540,6 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "normal"
-     },
      "weight": {
        "order": 3,
        "title": "Font weight",
@@ -574,7 +560,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -590,7 +576,7 @@
       }
     }
   },
-  "functionName": {
+  "functionname": {
    "order": 26,
    "type": "object",
    "title": "Function name",
@@ -601,7 +587,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -628,7 +614,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -655,7 +641,7 @@
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
-     "fontStyle": {
+     "fontstyle": {
        "order": 2,
        "title": "Font style",
        "type": "string",
@@ -671,24 +657,24 @@
       }
     }
   },
-  "gitGutter": {
+  "gitgutter": {
    "type": "object",
    "title": "Git gutter",
    "properties": {
-     "lineAddedColor": {
+     "lineaddedcolor": {
        "order": 1,
        "title": "Line added color",
        "type": "color",
        "default": "rgba(0, 255, 102, 1)"
      },
-     "lineModifiedColor": {
+     "linemodifiedcolor": {
        "order": 2,
        "title": "Line modified color",
        "type": "string",
        "type": "color",
        "default": "rgba(255, 213, 0, 1)"
      },
-     "lineRemovedColor": {
+     "lineremovedcolor": {
        "order": 3,
        "title": "Line removed color",
        "type": "string",
