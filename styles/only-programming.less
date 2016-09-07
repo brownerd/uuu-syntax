@@ -1,6 +1,86 @@
 // http://manual.macromates.com/en/language_grammars.html#naming_conventions
 
 
+
+.module {
+  // .test();
+  color: @module-color;
+  font-style: @module-fontstyle;
+  font-weight: @module-weight;
+}
+
+
+// .keyword.cs,
+// .keyword.java,
+// .keyword.hs,
+// .keyword.py
+
+
+.namespace.cs {
+  color: @namespace-color;
+  font-style: @namespace-fontstyle;
+  font-weight: @namespace-weight;
+}
+
+
+// .constant selects
+//   CSS - bold, italics, underline, auto keywords
+//   HTML - html Entities
+//   Jade - ( and )
+//   JS - Numbers, True/False, any named const
+//   JSON - None
+//   MD - None
+//   PHP - Numbers
+//   SCSS - :
+//   Stylus - Numbers, Booleans, null
+//   Vue - Nothing
+//   YAML - :
+
+.constant {
+  // .test();
+  color: @constant-color;
+  font-weight: @constant-weight;
+}
+
+
+// Check only-html.less for use of this class
+.attribute-name {
+  // .test();
+}
+
+
+// .type selects
+//   CSS - Property name
+//   HTML - Nothing
+//   Jade - block, include, if, each, var keywords
+//   JS - function, var, console, =>, Error keywords
+//   JSON - None
+//   MD - None
+//   PHP - class, function keywords
+//   SCSS - Property names
+//   Stylus - Property name
+//   Vue - Nothing
+//   YAML - Nothing
+
+.type.haskell,
+.type.elm {
+  // .test();
+  color: @type-color;
+  font-style: @type-fontstyle;
+  font-weight: @type-weight;
+}
+
+.identifier.haskell {
+  // .test();
+  color: @identifier-color;
+  font-style: @identifier-fontstyle;
+  font-weight: @identifier-weight;
+}
+
+
+
+
+
 // .object selects commas in an object and the object name before the delimiter
 // like object.thing in JS
 .object {
@@ -142,11 +222,6 @@
 
 
 
-// I probably use this for HTML only
-.attribute-name {
-  // .test();
-}
-
 
 
 // .section selects
@@ -189,40 +264,9 @@
 
 
 
-// .type selects
-//   CSS - Property name
-//   HTML - Nothing
-//   Jade - block, include, if, each, var keywords
-//   JS - function, var, console, =>, Error keywords
-//   JSON - None
-//   MD - None
-//   PHP - class, function keywords
-//   SCSS - Property names
-//   Stylus - Property name
-//   Vue - Nothing
-//   YAML - Nothing
-
-.type {
-  // .test();
-}
 
 
-// .constant selects
-//   CSS - bold, italics, underline, auto keywords
-//   HTML - html Entities
-//   Jade - ( and )
-//   JS - Numbers, True/False, any named const
-//   JSON - None
-//   MD - None
-//   PHP - Numbers
-//   SCSS - :
-//   Stylus - Numbers, Booleans, null
-//   Vue - Nothing
-//   YAML - :
 
-.constant {
-  // .test();
-}
 
 
 .modifier {

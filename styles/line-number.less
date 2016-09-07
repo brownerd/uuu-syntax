@@ -6,13 +6,13 @@
   padding-right: 1rem;
 
   &.cursor-line {
-    background-color: @editor-textcolor;
+    background-color: @editor-color;
     color: @linenos-selection;
     position: relative;
 
     // PUNK GUTTER > Triangle indicator
     &:after {
-      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-textcolor;
+      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-color;
       content: "";
       height: 1px;
       border-width: .75em; //1rem

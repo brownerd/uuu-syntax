@@ -43,7 +43,7 @@ public class DnDWebBrowser extends JFrame {
     browserPane.setDropTarget(new DropTarget(browserPane, DnDConstants.ACTION_COPY,
         new DropTargetHandler()));
 
-    Container contentPane = getContentPane();
+    Container contentPane = getContentPane(456);
     contentPane.add(toolBar, BorderLayout.NORTH);
     contentPane.add(new JScrollPane(browserPane), BorderLayout.CENTER);
   }
@@ -205,5 +205,3 @@ class WebToolBar extends JToolBar implements HyperlinkListener {
     }
   }
 }
-
-       

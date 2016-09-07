@@ -7,6 +7,11 @@
         "title": "Reset to default styles",
         "type": "boolean",
         "default": false
+      },
+      "zero": {
+        "title": "Reset EVERYTHING to grey",
+        "type": "boolean",
+        "default": false
       }
     }
   },
@@ -15,7 +20,7 @@
     "type": "object",
     "title": "Editor",
     "properties": {
-      "textcolor": {
+      "color": {
         "title": "Text color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
@@ -32,7 +37,7 @@
     "type": "object",
     "title": "Comments - // /**/ <!-- --> # ---",
     "properties": {
-      "textcolor": {
+      "color": {
         "order": 1,
         "title": "Set text color",
         "type": "color",
@@ -83,7 +88,7 @@
         "type": "color",
         "default": "rgba(204, 204, 204, 1)"
       },
-      "textcolor": {
+      "color": {
         "title": "Text color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
@@ -634,6 +639,134 @@
    "order": 28,
    "type": "object",
    "title": "Regex - /ab+c/",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "constant": {
+   "order": 29,
+   "type": "object",
+   "title": "Constant",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "module": {
+   "order": 30,
+   "type": "object",
+   "title": "Module",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "namespace": {
+   "order": 31,
+   "type": "object",
+   "title": "Namespace",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "type": {
+   "order": 32,
+   "type": "object",
+   "title": "Type",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "identifier": {
+   "order": 33,
+   "type": "object",
+   "title": "Identifier",
    "properties": {
      "color": {
        "order": 1,

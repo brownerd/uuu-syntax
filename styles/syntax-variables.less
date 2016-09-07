@@ -1,13 +1,13 @@
 @import 'colors';
 
 // Editor styles
-@editor-textcolor: @charcoal;
+@editor-color: @charcoal;
 @editor-backgroundcolor: @graphite;
 
 
 // Comment styles
-@comment-textcolor: @lead;
-@comment-textstyle: normal;
+@comment-color: @lead;
+@comment-fontstyle: normal;
 
 
 // Pacman cursor style
@@ -18,7 +18,7 @@
 
 // Gutter style
 @gutter-background: @editor-backgroundcolor;
-@gutter-textcolor: @editor-textcolor;
+@gutter-color: @editor-color;
 
 
 // Current line background-color and
@@ -45,7 +45,7 @@
 //   stylus - if, to, from, =, px, rem, return, unless ?=, +, @media
 //   JS - new, !, !!, import, return, +, :, typeof, switch, case, etc
 //   PHP - switch, case, if, return, else, ->, endif, while, endwhile
-// @keyword-color: @editor-textcolor;
+// @keyword-color: @editor-color;
 // @keyword-style: normal;
 // @keyword-weight: normal;
 
@@ -53,25 +53,25 @@
 // CSS ONLY --------------------------
 
 // .selector selects - CSS only
-@selector-color: @editor-textcolor;
+@selector-color: @editor-color;
 @selector-fontstyle: normal;
 @selector-weight: bold;
 
 
 // .property-name selects - CSS only
-@propertyname-color: @editor-textcolor;
+@propertyname-color: @editor-color;
 @propertyname-fontstyle: normal;
 @propertyname-weight: normal;
 
 
 // .property-value selects - CSS only
-@propertyvalue-color: @editor-textcolor;
+@propertyvalue-color: @editor-color;
 @propertyvalue-fontstyle: normal;
 @propertyvalue-weight: normal;
 
 
 // Selects pseudo-selectors
-@pseudo-color: @editor-textcolor;
+@pseudo-color: @editor-color;
 @pseudo-fontstyle: normal;
 @pseudo-weight: normal;
 
@@ -81,7 +81,7 @@
 //   Less - em, %, px, rem etc
 //   SCSS - em, %, px, rem etc
 //   Stylus - em, %, px, rem etc
-@unit-color: @editor-textcolor;
+@unit-color: @editor-color;
 @unit-fontstyle: normal;
 @unit-weight: normal;
 
@@ -89,19 +89,19 @@
 // HTML ONLY --------------------------
 
 // Doctyle style
-@doctype-color: @editor-textcolor;
+@doctype-color: @editor-color;
 @doctype-fontstyle: normal;
 @doctype-weight: normal;
 
 
 // Tag color - block and inline elements
-@tag-color: @editor-textcolor;
+@tag-color: @editor-color;
 @tag-fontstyle: normal;
 @tag-weight: normal;
 
 
 // Attribute style
-@attributename-color: @editor-textcolor;
+@attributename-color: @editor-color;
 @attributename-fontstyle: normal;
 @attributename-weight: normal;
 
@@ -121,7 +121,7 @@
 //   PHP - classes
 //   Vue - none
 //   YAML - none
-@class-color: @editor-textcolor;
+@class-color: @editor-color;
 @class-fontstyle: normal;
 @class-weight: normal;
 
@@ -139,93 +139,115 @@
 //   PHP - class, private, public, function keywords
 //   Vue - none
 //   YAML - none
-@storage-color: @editor-textcolor;
+@storage-color: @editor-color;
 @storage-fontstyle: normal;
 @storage-weight: normal;
 
 
 // storage modifier - const extends static
-@storagemodifier-color: @editor-textcolor;
+@storagemodifier-color: @editor-color;
 @storagemodifier-fontstyle: normal;
 @storagemodifier-weight: normal;
 
 
 // . , : "" '' / {} [] () ;
-@punctuation-color: @editor-textcolor;
+@punctuation-color: @editor-color;
 @punctuation-fontstyle: normal;
 @punctuation-weight: bold;
 
 // Punctuation styles are all set to the above
 
 // // : and ; outside of JS
-// @separator-color: @editor-textcolor;
+// @separator-color: @editor-color;
 // @separator-weight: normal;
 //
 // // , and . in JS
-// @delimeter-color: @editor-textcolor;
+// @delimeter-color: @editor-color;
 // @delimeter-weight: normal;
 //
 // // ;
-// @terminator-color: @editor-textcolor;
+// @terminator-color: @editor-color;
 // @terminator-weight: normal;
 
 // >< ""
-// @punctuation-html-color: @editor-textcolor;
+// @punctuation-html-color: @editor-color;
 // @punctuation-html-style: normal;
 // @punctuation-html-weight: normal;
 
 
 // Control - return, if, else, case, switch, die, break, while, import, from
-@control-color: @editor-textcolor;
-@control-style: normal;
+@control-color: @editor-color;
+@control-fontstyle: normal;
 @control-weight: normal;
 
 
 // strings
-@string-color: @editor-textcolor;
-@string-style: italic;
+@string-color: @editor-color;
+@string-fontstyle: italic;
 @string-weight: normal;
 
 
 // Style quotation marks
 // not all syntaxes let you style the quotation marks!
-@quotationmark-color: @editor-textcolor;
+@quotationmark-color: @editor-color;
 @quotationmark-weight: bold;
 
 
 // Operator - + - / * == === !==
-@operator-color: @editor-textcolor;
-@operator-style: normal;
+@operator-color: @editor-color;
 @operator-weight: bold;
 
 
 // Number - + - / * == === !==
-@number-color: @editor-textcolor;
-@number-style: normal;
+@number-color: @editor-color;
+@number-fontstyle: normal;
 @number-weight: normal;
 
 
 // Function name
-@functionname-color: @editor-textcolor;
-@functionname-style: normal;
+@functionname-color: @editor-color;
+@functionname-fontstyle: normal;
 @functionname-weight: normal;
 
 
-// instance
-@instance-color: @editor-textcolor;
-@instance-style: normal;
+// Instance
+@instance-color: @editor-color;
+@instance-fontstyle: normal;
 @instance-weight: normal;
 
 
-// constructor
-@constructor-color: @editor-textcolor;
-@constructor-style: normal;
+// Constructor
+@constructor-color: @editor-color;
+@constructor-fontstyle: normal;
 @constructor-weight: normal;
 
+// Constant
+@constant-color: @editor-color;
+@constant-weight: normal;
 
-// regex string
-@regex-color: @editor-textcolor;
-@regex-style: normal;
+// Module
+@module-color: @editor-color;
+@module-fontstyle: normal;
+@module-weight: normal;
+
+// Namespace
+@namespace-color: @editor-color;
+@namespace-fontstyle: normal;
+@namespace-weight: normal;
+
+// Type
+@type-color: @editor-color;
+@type-fontstyle: normal;
+@type-weight: normal;
+
+// Identifier
+@identifier-color: @editor-color;
+@identifier-fontstyle: normal;
+@identifier-weight: normal;
+
+// Regex string
+@regex-color: @editor-color;
+@regex-fontstyle: normal;
 @regex-weight: normal;
 
 
