@@ -1,15 +1,10 @@
 {
   "resetAllStyles": {
     "type": "object",
-    "title": "Reset to default",
+    "title": "Reset",
     "properties": {
       "reset": {
         "title": "Reset to default styles",
-        "type": "boolean",
-        "default": false
-      },
-      "zero": {
-        "title": "Reset EVERYTHING to grey",
         "type": "boolean",
         "default": false
       }

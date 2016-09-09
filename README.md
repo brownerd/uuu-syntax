@@ -17,6 +17,7 @@ UUU can easily change the color, font-style and font-weight of nearly every piec
 1. Use "dev mode" to see updates as you make them. Open your terminal navigate to your current working directory and enter `atom --dev .` Using the [Terminal Plus]() package it the fastest solution for me, but use whatever you like.
 1. Open files for all the languages that you want to style. You don't need to style every language. This is UUUr syntax!
 1. Just start at the top of the settings and work your way down. Make one change, and then check it out.
+1. Make color swatches in CodePen using hsla. Screenshot them and use the color picker on the screenshot.
 
 
 **Issues**
