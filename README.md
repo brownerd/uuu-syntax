@@ -14,7 +14,7 @@ UUU can easily change the color, font-style and font-weight of nearly every piec
 
 
 **PROtip for theming**
-- Use "dev mode" to see updates as you make them. Open your terminal navigate to your current working directory and enter `atom --dev .` Using the [Terminal Plus]() package it the fastest solution for me, but use whatever you like.
+- Use "dev mode" to see updates as you make them. Open your terminal navigate to your current working directory and enter `atom --dev .` Using the [Terminal Plus](https://atom.io/packages/terminal-plus) package it the fastest solution for me, but use whatever you like.
 - Open files for all the languages that you want to style. You don't need to style every language. This is UUUr syntax!
 - Just start at the top of the settings and work your way down. Make one change, and then check it out.
 - If you have a bunch of colors that you want to use, just screenshot the swatches and use the color picker to select the colors. You do not need to write done your colors at all.
@@ -46,8 +46,11 @@ If you want to export and import your Syntaxes and UIs, then install [UUU]().
 
 ![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
 
+## Extras! File icons
+I got these from [File Icons](https://atom.io/packages/file-icons).
 
-
+## Extras! Terminal Plus
+If you like your Terminal in your Atom editor check out [Terminal Plua](https://atom.io/packages/terminal-plus).
 
 
 ## Notes:
@@ -82,7 +85,7 @@ Overall, I can live with what UUU-Syntax covers. If there is a special case that
 @cursor-style: pacman;
 @cursor-color: rgba(255, 213, 0, 1);
 @cursor-shadow: rgba(51, 51, 51, 1);
-@gutter-background: rgba(179, 179, 179, 1);
+@gutter-backgroundcolor: rgba(179, 179, 179, 1);
 @gutter-color: rgba(51, 51, 51, 1);
 @folded-codecolor: rgba(255, 0, 255, 1);
 @linenos-selection: rgba(0, 255, 102, 1);
@@ -175,7 +178,7 @@ Overall, I can live with what UUU-Syntax covers. If there is a special case that
 @cursor-style: pacman;
 @cursor-color: rgba(255, 213, 0, 1);
 @cursor-shadow: rgba(51, 51, 51, 1);
-@gutter-background: rgba(148, 82, 0, 1);
+@gutter-backgroundcolor: rgba(148, 82, 0, 1);
 @gutter-color: rgba(255, 212, 121, 1);
 @folded-codecolor: rgba(255, 0, 255, 1);
 @linenos-selection: rgba(155, 115, 191, 1);
