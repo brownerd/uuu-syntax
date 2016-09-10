@@ -141,7 +141,7 @@
   "punctuation": {
     "order": 9,
     "type": "object",
-    "title": "Punctuation - : . , {} () [] ;  and more",
+    "title": "Punctuation - : . , {} () [] ; <></>",
     "properties": {
       "color": {
         "order": 1,
@@ -677,8 +677,35 @@
       }
     }
   },
-  "module": {
+  "boolean": {
    "order": 30,
+   "type": "object",
+   "title": "Boolean - true, false",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "module": {
+   "order": 31,
    "type": "object",
    "title": "Module",
    "properties": {
@@ -705,7 +732,7 @@
     }
   },
   "namespace": {
-   "order": 31,
+   "order": 32,
    "type": "object",
    "title": "Namespace",
    "properties": {
@@ -732,7 +759,7 @@
     }
   },
   "type": {
-   "order": 32,
+   "order": 33,
    "type": "object",
    "title": "Type",
    "properties": {
@@ -759,9 +786,9 @@
     }
   },
   "identifier": {
-   "order": 33,
+   "order": 34,
    "type": "object",
-   "title": "Identifier",
+   "title": "Identifier - Haskell",
    "properties": {
      "color": {
        "order": 1,

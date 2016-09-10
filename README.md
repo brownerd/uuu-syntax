@@ -13,15 +13,18 @@ UUU can easily change the color, font-style and font-weight of nearly every piec
 - Style away!
 
 
-**PROtip**
-1. Use "dev mode" to see updates as you make them. Open your terminal navigate to your current working directory and enter `atom --dev .` Using the [Terminal Plus]() package it the fastest solution for me, but use whatever you like.
-1. Open files for all the languages that you want to style. You don't need to style every language. This is UUUr syntax!
-1. Just start at the top of the settings and work your way down. Make one change, and then check it out.
-1. Make color swatches in CodePen using hsla. Screenshot them and use the color picker on the screenshot.
+**PROtip for theming**
+- Use "dev mode" to see updates as you make them. Open your terminal navigate to your current working directory and enter `atom --dev .` Using the [Terminal Plus]() package it the fastest solution for me, but use whatever you like.
+- Open files for all the languages that you want to style. You don't need to style every language. This is UUUr syntax!
+- Just start at the top of the settings and work your way down. Make one change, and then check it out.
+- If you have a bunch of colors that you want to use, just screenshot the swatches and use the color picker to select the colors. You do not need to write done your colors at all.
+- Match the background of the editor with the background of the gutter.
+- Match the background for the selected line with the "Button background" color in the UUU UI.
+
 
 
 **Issues**
-If your style doesn't show, or it looks like all the styles reverted to the default, then just "reload" the window. You can do this in one of three ways:
+If your style doesn't show, or it if looks like all the styles reverted to the default, then just "reload" the window. You can do this in one of three ways:
 
 - Goto View > Developer > Reload Window
 - Or, press `ctrl + alt + cmd + L`
@@ -68,7 +71,101 @@ Overall, I can live with what UUU-Syntax covers. If there is a special case that
 
 ### Syntax styles
 
-#### Hot mess
+
+#### URAWSM
+
+```less
+@editor-backgroundcolor: rgba(179, 179, 179, 1);
+@editor-color: rgba(51, 51, 51, 1);
+@comment-color: rgba(153, 153, 153, 1);
+@comment-fontstyle: normal;
+@cursor-style: pacman;
+@cursor-color: rgba(255, 213, 0, 1);
+@cursor-shadow: rgba(51, 51, 51, 1);
+@gutter-background: rgba(179, 179, 179, 1);
+@gutter-color: rgba(51, 51, 51, 1);
+@folded-codecolor: rgba(255, 0, 255, 1);
+@linenos-selection: rgba(0, 255, 102, 1);
+@bracketmatcher-background: rgba(255, 0, 255, 1);
+@indentguide-linecolor: rgba(214, 214, 214, 1);
+@punctuation-color: rgba(51, 51, 51, 1);
+@punctuation-weight: bold;
+@selector-color: rgba(51, 51, 51, 1);
+@selector-fontstyle: normal;
+@selector-weight: bold;
+@propertyname-color: rgba(51, 51, 51, 1);
+@propertyname-fontstyle: normal;
+@propertyname-weight: normal;
+@propertyvalue-color: rgba(51, 51, 51, 1);
+@propertyvalue-fontstyle: normal;
+@propertyvalue-weight: normal;
+@unit-color: rgba(51, 51, 51, 1);
+@unit-fontstyle: normal;
+@unit-weight: normal;
+@pseudo-color: rgba(235, 235, 235, 1);
+@pseudo-fontstyle: normal;
+@pseudo-weight: normal;
+@doctype-color: rgba(51, 51, 51, 1);
+@doctype-fontstyle: normal;
+@doctype-weight: bold;
+@tag-color: rgba(51, 51, 51, 1);
+@tag-fontstyle: normal;
+@tag-weight: bold;
+@attributename-color: rgba(51, 51, 51, 1);
+@attributename-fontstyle: normal;
+@attributename-weight: bold;
+@class-color: rgba(51, 51, 51, 1);
+@class-fontstyle: normal;
+@class-weight: normal;
+@storage-color: rgba(51, 51, 51, 1);
+@storage-fontstyle: normal;
+@storage-weight: bold;
+@storagemodifier-color: rgba(51, 51, 51, 1);
+@storagemodifier-fontstyle: normal;
+@storagemodifier-weight: bold;
+@control-color: rgba(51, 51, 51, 1);
+@control-fontstyle: normal;
+@control-weight: normal;
+@quotationmark-color: rgba(51, 51, 51, 1);
+@quotationmark-weight: bold;
+@string-color: rgba(51, 51, 51, 1);
+@string-fontstyle: italic;
+@string-weight: normal;
+@operator-color: rgba(51, 51, 51, 1);
+@operator-weight: bold;
+@number-color: rgba(51, 51, 51, 1);
+@number-fontstyle: normal;
+@number-weight: normal;
+@functionname-color: rgba(51, 51, 51, 1);
+@functionname-fontstyle: normal;
+@functionname-weight: bold;
+@instance-color: rgba(51, 51, 51, 1);
+@instance-fontstyle: normal;
+@instance-weight: normal;
+@regex-color: rgba(51, 51, 51, 1);
+@regex-fontstyle: normal;
+@regex-weight: normal;
+@constant-color: rgba(51, 51, 51, 1);
+@constant-weight: normal;
+@module-color: rgba(51, 51, 51, 1);
+@module-fontstyle: normal;
+@module-weight: bold;
+@namespace-color: rgba(51, 51, 51, 1);
+@namespace-fontstyle: normal;
+@namespace-weight: normal;
+@type-color: rgba(51, 51, 51, 1);
+@type-fontstyle: normal;
+@type-weight: bold;
+@identifier-color: rgba(51, 51, 51, 1);
+@identifier-fontstyle: normal;
+@identifier-weight: normal;
+@gitgutter-lineaddedcolor: rgba(0, 255, 102, 1);
+@gitgutter-linemodifiedcolor: rgba(255, 213, 0, 1);
+@gitgutter-lineremovedcolor: rgba(255, 0, 0, 1);
+```
+
+
+#### Barf!
 
 ```less
 @editor-backgroundcolor: rgba(66, 66, 66, 1);
@@ -158,8 +255,4 @@ Overall, I can live with what UUU-Syntax covers. If there is a special case that
 @gitgutter-lineaddedcolor: rgba(0, 255, 102, 1);
 @gitgutter-linemodifiedcolor: rgba(255, 213, 0, 1);
 @gitgutter-lineremovedcolor: rgba(255, 0, 0, 1);
-```
-
-```js
-["rgba(66, 66, 66, 1)","rgba(255, 255, 255, 1)","rgba(146, 144, 0, 1)","italic","pacman","rgba(255, 213, 0, 1)","rgba(51, 51, 51, 1)","rgba(148, 82, 0, 1)","rgba(255, 212, 121, 1)","rgba(255, 0, 255, 1)","rgba(155, 115, 191, 1)","rgba(255, 251, 0, 1)","rgba(255, 251, 0, 1)","rgba(0, 84, 147, 1)","bold","rgba(148, 33, 147, 1)","normal","bold","rgba(148, 55, 255, 1)","normal","normal","rgba(255, 138, 216, 1)","normal","normal","rgba(0, 250, 146, 1)","normal","normal","rgba(255, 38, 0, 1)","normal","normal","rgba(255, 47, 146, 1)","normal","normal","rgba(0, 144, 81, 1)","normal","normal","rgba(146, 144, 0, 1)","normal","normal","rgba(115, 252, 214, 1)","normal","normal","rgba(148, 17, 0, 1)","normal","bold","rgba(148, 55, 255, 1)","normal","bold","rgba(255, 38, 0, 1)","italic","normal","rgba(148, 55, 255, 1)","bold","rgba(148, 33, 147, 1)","italic","normal","rgba(0, 249, 0, 1)","bold","rgba(255, 47, 146, 1)","normal","normal","rgba(255, 147, 0, 1)","normal","normal","rgba(255, 212, 121, 1)","normal","normal","rgba(51, 51, 51, 1)","italic","normal","rgba(148, 82, 0, 1)","bold","rgba(146, 144, 0, 1)","italic","bold","rgba(0, 249, 0, 1)","italic","bold","rgba(255, 133, 255, 1)","italic","bold","rgba(0, 145, 147, 1)","italic","bold","rgba(0, 255, 102, 1)","rgba(255, 213, 0, 1)","rgba(255, 0, 0, 1);"]
 ```
