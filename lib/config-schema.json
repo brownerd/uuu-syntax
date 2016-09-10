@@ -23,7 +23,7 @@
       "backgroundcolor": {
         "title": "Background color",
         "type": "color",
-        "default": "rgba(204, 204, 204, 1)"
+        "default": "rgba(179, 179, 179, 1);"
       }
     }
   },
@@ -81,12 +81,19 @@
       "backgroundcolor": {
         "title": "Set background color",
         "type": "color",
-        "default": "rgba(204, 204, 204, 1)"
+        "default": "rgba(179, 179, 179, 1);"
       },
       "color": {
         "title": "Text color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
+      },
+      "punk": {
+        "title": "Punk gutter",
+        "description": "For devs with attitudes",
+        "type": "string",
+        "enum": ["hellyeah", "hellno"],
+        "default": "hellyeah"
       }
     }
   },
@@ -134,7 +141,7 @@
       "linecolor": {
         "title": "Line color",
         "type": "color",
-        "default": "rgba(255, 255, 255, 1)"
+        "default": "rgba(214, 214, 214, 1)"
       }
     }
   },
@@ -154,7 +161,7 @@
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
-        "default": "normal"
+        "default": "bold"
       }
     }
   },
@@ -316,7 +323,7 @@
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
-        "default": "normal"
+        "default": "bold"
       }
     }
   },
@@ -343,7 +350,7 @@
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
-        "default": "normal"
+        "default": "bold"
       }
     }
   },
@@ -370,7 +377,7 @@
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
-        "default": "normal"
+        "default": "bold"
       }
     }
   },
@@ -498,7 +505,7 @@
        "title": "Font weight",
        "type": "string",
        "enum": ["normal", "bold"],
-       "default": "normal"
+       "default": "bold"
       }
     }
   },
@@ -599,7 +606,7 @@
        "title": "Font weight",
        "type": "string",
        "enum": ["normal", "bold"],
-       "default": "normal"
+       "default": "bold"
       }
     }
   },
@@ -693,7 +700,7 @@
        "title": "Font style",
        "type": "string",
        "enum": ["normal", "italic"],
-       "default": "normal"
+       "default": "italic"
      },
      "weight": {
        "order": 3,
@@ -727,7 +734,7 @@
        "title": "Font weight",
        "type": "string",
        "enum": ["normal", "bold"],
-       "default": "normal"
+       "default": "bold"
       }
     }
   },
@@ -781,7 +788,7 @@
        "title": "Font weight",
        "type": "string",
        "enum": ["normal", "bold"],
-       "default": "normal"
+       "default": "bold"
       }
     }
   },
