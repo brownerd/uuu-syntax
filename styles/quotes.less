@@ -7,7 +7,7 @@
   &.quoted {
     //.test();
     color: @string-color;
-    font-style: @string-style;
+    font-style: @string-fontstyle;
     font-weight: @string-weight;
   }
 
@@ -16,7 +16,7 @@
   &.double {
     //.test();
     color: @string-color;
-    font-style: @string-style;
+    font-style: @string-fontstyle;
     font-weight: @string-weight;
   }
 
@@ -25,12 +25,12 @@
   &.single {
     //.test();
     color: @string-color;
-    font-style: @string-style;
+    font-style: @string-fontstyle;
     font-weight: @string-weight;
   }
 
   &.unquoted {
-    color: @editor-text-color;
+    color: @editor-color;
     font-style: normal;
     font-weight: normal;
   }
@@ -40,6 +40,6 @@
 // Not all syntaxes let you select the quotation marks alone
 .punctuation.definition.string.begin,
 .punctuation.definition.string.end  {
-  color: @quotation-mark-color;
-  font-weight: @quotation-mark-weight;
+  color: @quotationmark-color;
+  font-weight: @quotationmark-weight;
 }

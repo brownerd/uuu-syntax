@@ -4,7 +4,7 @@
 .control {
   //.test();
   color: @control-color;
-  font-style: @control-style;
+  font-style: @control-fontstyle;
   font-weight: @control-weight;
 }
 
@@ -16,13 +16,25 @@
 //   JS - new, !, !!, import, return, +, :, typeof, switch, case, etc
 //   PHP - switch, case, if, return, else, ->, endif, while, endwhile
 //
-.keyword {
-  // this is a bit greedy, i'm not going to style this
+//.keyword
+
+.import,
+.keyword.cs,
+.keyword.go,
+.keyword.java,
+.keyword.hs,
+.keyword.py,
+.keyword.elm {
+  // this is a bit greedy. caution
   //.test();
   // color: @keyword-color;
-  // font-style: @keyword-style;
+  // font-style: @keyword-fontstyle;
   // font-weight: @keyword-weight;
+  color: @control-color;
+  font-style: @control-fontstyle;
+  font-weight: @control-weight;
 }
+
 
 
 // I removed this from my config-schema
@@ -39,7 +51,7 @@
 //       "type": "color",
 //       "default": "rgba(51, 51, 51, 1)"
 //     },
-//     "fontStyle": {
+//     "fontstyle": {
 //       "order": 2,
 //       "title": "Font style",
 //       "type": "string",

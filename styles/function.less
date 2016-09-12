@@ -15,7 +15,7 @@
 .class {
   //.test();
   color: @class-color;
-  font-style: @class-style;
+  font-style: @class-fontstyle;
   font-weight: @class-weight;
 }
 
@@ -25,11 +25,13 @@
 //   SCSS - same
 //   stylus - same
 //   PHP same
-.function.name {
+.function.name,
+.function.go,
+.entity.global.clojure {
   //.test();
-  color: @function-name-color;
-  font-style: @function-name-style;
-  font-weight: @function-name-weight;
+  color: @functionname-color;
+  font-style: @functionname-fontstyle;
+  font-weight: @functionname-weight;
 }
 
 
@@ -65,7 +67,7 @@
 .function.name.constructor {
   //.test();
   color: @constructor-color;
-  font-style: @constructor-style;
+  font-style: @constructor-fontstyle;
   font-weight: @constructor-weight;
 }
 
@@ -74,6 +76,6 @@
 .instance {
   //.test();
   color: @instance-color;
-  font-style: @instance-style;
+  font-style: @instance-fontstyle;
   font-weight: @instance-weight;
 }

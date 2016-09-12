@@ -15,26 +15,27 @@
 // Sass gets this wrong
 .variable,
 .variable.php,
-.interpolation {
+.interpolation,
+.keyword.control.clojure {
 
   //.test();
   color: @storage-color;
-  font-style: @storage-style;
+  font-style: @storage-fontstyle;
   font-weight: @storage-weight;
 }
 
 // This is a fix for Sass
 .variable > .string.scss {
-  color: @editor-text-color;
+  color: @editor-color;
 }
 
 
 
 // Storage modifier - const extends static
 .storage.modifier {
-  color: @storage-modifier-color;
-  font-style: @storage-modifier-style;
-  font-weight: @storage-modifier-weight;
+  color: @storagemodifier-color;
+  font-style: @storagemodifier-fontstyle;
+  font-weight: @storagemodifier-weight;
 }
 
 // Selects var and let keyword JS and Jade

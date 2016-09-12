@@ -1,5 +1,14 @@
-// Not sure what this is needed for
+
 [gutter-name="linter"] {
-  width: 0;
-  display: none;
+
+  // not going to use this yet
+  & when (@linter-show = false) {
+    display: none;
+    width: 0;
+  }
+
+  div {
+    background-color: @trans;
+  }
+
 }

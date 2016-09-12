@@ -6,28 +6,32 @@
   padding-right: 1rem;
 
   &.cursor-line {
-    background-color: @editor-text-color;
+
+    & when (@gutter-punk = hellyeah) {
+      background-color: @editor-color;
+    }
+
     color: @linenos-selection;
     position: relative;
 
-    // PUNK GUTTER > Triangle indicator
-    &:after {
-      border-color: @linenos-selection @linenos-selection @linenos-selection @editor-text-color;
-      content: "";
-      height: 1px;
-      border-width: .75em; //1rem
-      border-style: solid;
-      position: absolute;
-      transform: translate(-5px, 0px);
-      //z-index: 0;
-      // right: 0; //-12px
-      // top: 0;
+
+    & when (@gutter-punk = hellyeah) {
+      // PUNK GUTTER > Triangle indicator
+      &:after {
+        border-color: @linenos-selection @linenos-selection @linenos-selection @editor-color;
+        content: "";
+        height: 1px;
+        border-width: .75em; //1rem
+        border-style: solid;
+        position: absolute;
+        transform: translate(5px, 0px);
+      }
     }
   }
 
   &.folded {
     //background-color: @yellow;
-    color: @folded-code-color;
+    color: @folded-codecolor;
 
     .icon-right::before {
       // Move icon above gutter triangle
@@ -42,7 +46,7 @@
 
 
 .fold-marker:after {
-  color: @folded-code-color;
+  color: @folded-codecolor;
   font-size: 2rem;
   line-height: 0;
   vertical-align: middle;
