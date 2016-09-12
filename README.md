@@ -52,6 +52,9 @@ I got these from [File Icons](https://atom.io/packages/file-icons).
 ## Extras! Terminal Plus
 If you like your Terminal in your Atom editor check out [Terminal Plua](https://atom.io/packages/terminal-plus).
 
+## Extras! Monoid Font
+If you want more from a monospaced font, check out [Monoid](https://larsenwork.com/monoid/).
+
 
 ## Notes:
 UUU-Syntax, lets you modify just about everything that it can. However, if you are an OCD type like me, then you might find that some styles modify some things that they should/shouldn't. Control at that level really becomes language specific. When a language/Grammar is mapped in Atom, it follows the same conventions used in TextMate. Read this:  [12 Language Grammars](http://manual.macromates.com/en/language_grammars.html#naming_conventions). The take away, is that there are many ways to mark up a Grammar, and these decisions are made differently between languages. Thus, there is an inconsistency in the use of available classes in Atom to style. Furthermore, not every Grammar marks up all of its pieces. Sometimes a grammar might lump a bunch of pieces into one identifier.

@@ -23,7 +23,7 @@
       "backgroundcolor": {
         "title": "Background color",
         "type": "color",
-        "default": "rgba(179, 179, 179, 1);"
+        "default": "rgba(179, 179, 179, 1)"
       }
     }
   },
@@ -81,7 +81,7 @@
       "backgroundcolor": {
         "title": "Set background color",
         "type": "color",
-        "default": "rgba(179, 179, 179, 1);"
+        "default": "rgba(179, 179, 179, 1)"
       },
       "color": {
         "title": "Text color",
