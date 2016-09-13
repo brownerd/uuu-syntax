@@ -27,8 +27,32 @@
       }
     }
   },
-  "comments": {
+  "gutter": {
     "order": 2,
+    "type": "object",
+    "title": "Gutter",
+    "properties": {
+      "backgroundcolor": {
+        "title": "Set background color",
+        "type": "color",
+        "default": "rgba(179, 179, 179, 1)"
+      },
+      "color": {
+        "title": "Text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "punk": {
+        "title": "Punk gutter",
+        "description": "For devs with attitudes",
+        "type": "string",
+        "enum": ["hellyeah", "hellno"],
+        "default": "hellyeah"
+      }
+    }
+  },
+  "comments": {
+    "order": 3,
     "type": "object",
     "title": "Comments - // /**/ <!-- --> # ---",
     "properties": {
@@ -48,7 +72,7 @@
     }
   },
   "cursor": {
-    "order": 3,
+    "order": 4,
     "type": "object",
     "title": "Cursor",
     "properties": {
@@ -70,30 +94,6 @@
         "title": "*Cursor shadow - Pacman cursor only",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
-      }
-    }
-  },
-  "gutter": {
-    "order": 4,
-    "type": "object",
-    "title": "Gutter",
-    "properties": {
-      "backgroundcolor": {
-        "title": "Set background color",
-        "type": "color",
-        "default": "rgba(179, 179, 179, 1)"
-      },
-      "color": {
-        "title": "Text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
-      },
-      "punk": {
-        "title": "Punk gutter",
-        "description": "For devs with attitudes",
-        "type": "string",
-        "enum": ["hellyeah", "hellno"],
-        "default": "hellyeah"
       }
     }
   },
