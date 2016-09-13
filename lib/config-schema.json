@@ -51,7 +51,7 @@
       }
     }
   },
-  "comments": {
+  "comment": {
     "order": 3,
     "type": "object",
     "title": "Comments - // /**/ <!-- --> # ---",
