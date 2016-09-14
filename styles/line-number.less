@@ -11,14 +11,14 @@
       background-color: @editor-color;
     }
 
-    color: @linenos-selection;
+    color: @selectedline-backgroundcolor;
     position: relative;
 
 
     & when (@gutter-punk = hellyeah) {
       // PUNK GUTTER > Triangle indicator
       &:after {
-        border-color: @linenos-selection @linenos-selection @linenos-selection @editor-color;
+        border-color: @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundcolor @editor-color;
         content: "";
         height: 1px;
         border-width: .75em; //1rem

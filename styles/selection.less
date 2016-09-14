@@ -7,15 +7,15 @@ atom-text-editor.is-focused, :host(.is-focused) {
   // :: Selection
   .selection {
     .region {
-      background-color: @linenos-selection;
-      // background-image: repeating-linear-gradient(-45deg, @linenos-selection, @linenos-selection 17px, @g 17px, @g 18px);
+      background-color: @selectedline-backgroundcolor;
+      // background-image: repeating-linear-gradient(-45deg, @selectedline-backgroundcolor, @selectedline-backgroundcolor 17px, @g 17px, @g 18px);
     }
   }
   // Line selection
   .line-number .cursor-line-no-selection,
   .line.cursor-line {
-    background-color: @linenos-selection;
-    // background-image: repeating-linear-gradient(-45deg, @linenos-selection, @linenos-selection 17px, @g 17px, @g 18px);
+    background-color: @selectedline-backgroundcolor;
+    // background-image: repeating-linear-gradient(-45deg, @selectedline-backgroundcolor, @selectedline-backgroundcolor 17px, @g 17px, @g 18px);
 
     //background-color: hsla(60, 100%, 10%, .7);
     //border-bottom: 1px solid yellow;
