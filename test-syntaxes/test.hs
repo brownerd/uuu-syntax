@@ -8,11 +8,14 @@ import Data.Attoparsec (skipWhile)
 import Data.Function (on)
 import Data.List
 import Data.Maybe
-import Data.Monoid
+import Data.Monoidz
 import Data.Ord
 import Numeric.LinearAlgebra -- from the "hmatrix" package
+import Data.Ord
 
 type Point = Vector Double
+
+
 
 data Atom = Atom {
     chainID :: Char,
