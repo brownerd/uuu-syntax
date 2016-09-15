@@ -6,68 +6,14 @@
 
 
 
+typeof Symbol() === 'symbol'
+typeof Symbol('foo') === 'symbol'
+typeof Symbol.iterator === 'symbol'
 
-var Person = function() {
-  this.canTalk = true;
-};
-
-Person.prototype.greet = function() {
-  if (this.canTalk) {
-    console.log('Hi, I am ' + this.name);
-  }
-};
-
-var Employee = function(name, title) {
-  Person.call(this);
-  this.name = name;
-  this.title = title;
-};
-
-Employee.prototype = Object.create(Person.prototype);
-Employee.prototype.constructor = Employee;
-
-Employee.prototype.greet = function() {
-  if (this.canTalk) {
-    console.log('Hi, I am ' + this.name + ', the ' + this.title);
-  }
-};
-
-var Customer = function(name) {
-  Person.call(this);
-  this.name = name;
-};
-
-Customer.prototype = Object.create(Person.prototype);
-Customer.prototype.constructor = Customer;
-
-var Mime = function(name) {
-  Person.call(this);
-  this.name = name;
-  this.canTalk = false;
-};
-
-Mime.prototype = Object.create(Person.prototype);
-Mime.prototype.constructor = Mime;
-
-var bob = new Employee('Bob', 'Builder');
-var joe = new Customer('Joe');
-var rg = new Employee('Red Green', 'Handyman');
-var mike = new Customer('Mike');
-var mime = new Mime('Mime');
-
-bob.greet();
-// Hi, I am Bob, the Builder
-
-joe.greet();
-// Hi, I am Joe
-
-rg.greet();
-// Hi, I am Red Green, the Handyman
-
-mike.greet();
-// Hi, I am Mike
-
-mime.greet();
+var sym = Symbol("foo");
+typeof sym;     // "symbol"
+var symObj = Object(sym);
+typeof symObj;  // "object"
 
 
 
@@ -96,7 +42,7 @@ var re = /ab+c/;
 var arr = [23];
 
 
-let hi = 3;
+let hi = 3786940.split('');
 
 function hello (a, b, c) {
   return true ;
