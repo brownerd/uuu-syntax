@@ -70,8 +70,13 @@ public class DnDWebBrowser extends JFrame {
           ioException.printStackTrace();
           event.dropComplete(false);
         }
-      } else {
+      }
+      else if {
         event.rejectDrop();
+      }
+
+      else {
+        event.drop(true);
       }
     }
 
