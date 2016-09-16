@@ -1,5 +1,9 @@
 'use strict';
 
+// Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+// sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+//  magna aliquam erat volutpat.
+
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);
 
 if(i)return i(o,!0);
@@ -17,10 +21,6 @@ return n[o].exports}
 var i=typeof require=="function"&&require;
 
 for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){},{}[]},{},[1]);
-
-
-// I always forget how to do these
-// https://egghead.io/lessons/ecmascript-6-es6-modules-es2015-import-and-export
 
 
 
