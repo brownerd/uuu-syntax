@@ -8,6 +8,9 @@
     "syntax",
     "theme"
   ],
+  "scripts": {
+    "clean": "echo '' > styles/uuu.less"
+  }
   "repository": "https://github.com/atom/uuu-syntax",
   "license": "MIT",
   "engines": {
