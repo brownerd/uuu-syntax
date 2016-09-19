@@ -96,7 +96,7 @@ chains' c (a1:bs@(a2:as))
     | otherwise        = (c' []):chains' id bs
   where c' = c . (a1:)
 
--- The actual function I use
+-- The actual function I use but that was it
 chains :: [Atom] -> [Chain]
 chains = chains' id
        . sortBy (comparing chainID `thenBy` comparing resSeq)

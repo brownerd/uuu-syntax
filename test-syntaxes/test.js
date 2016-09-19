@@ -1,8 +1,40 @@
 'use strict';
 
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){},{}[]},{},[1]);
-// I always forget how to do these
-// https://egghead.io/lessons/ecmascript-6-es6-modules-es2015-import-and-export
+// Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+// sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+//  magna aliquam erat volutpat.
+
+(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);
+
+if(i)return i(o,!0);
+
+var f=new Error("Cannot find module '"+o+"'");
+throw f.code="MODULE_NOT_FOUND",f}
+
+var l=n[o]={exports:{}};
+
+t[o][0].call(l.exports,function(e){var n=t[o][1][e];
+  return s(n?n:e)},l,l.exports,e,t,n,r)}
+
+return n[o].exports}
+
+var i=typeof require=="function"&&require;
+
+for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){},{}[]},{},[1]);
+
+
+
+typeof Symbol() === 'symbol'
+typeof Symbol('foo') === 'symbol'
+typeof Symbol.iterator === 'symbol'
+
+var sym = Symbol("foo");
+typeof sym;     // "symbol"
+var symObj = Object(sym);
+typeof symObj;  // "object"
+
+
+
 
 
 var rad = 1234 * 367;
@@ -28,7 +60,7 @@ var re = /ab+c/;
 var arr = [23];
 
 
-let hi = 3;
+let hi = 3786940.split('');
 
 function hello (a, b, c) {
   return true ;

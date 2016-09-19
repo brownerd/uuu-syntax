@@ -12,11 +12,19 @@
 //   Vue - none
 //   YAML - none
 
-.class {
+.class,
+.entity.other.inherited-class.scala{
   //.test();
-  color: @class-color;
+  color: darken(@class-color, 25);
   font-style: @class-fontstyle;
   font-weight: @class-weight;
+}
+
+.constructor.js {
+  // .test();
+  //color: spin(@class-color, 180);
+  // font-style: @class-fontstyle;
+  // font-weight: @class-weight;
 }
 
 
@@ -32,6 +40,11 @@
   color: @functionname-color;
   font-style: @functionname-fontstyle;
   font-weight: @functionname-weight;
+}
+
+// Methods in js
+.support.function {
+  //.test();
 }
 
 
@@ -51,8 +64,12 @@
 
 
 // .method-call selects the whole method call
-.method-call {
+.method-call,
+.meta.symbol.clojure {
   //.test();
+  // color: @method-color;
+  // font-style: @method-fontstyle;
+  // font-weight: @method-weight;
 }
 
 
