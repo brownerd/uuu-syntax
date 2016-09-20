@@ -8,6 +8,26 @@ import javax.swing.JToolBar;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
 
+import calc.math.*;
+package geometry;
+
+public class Circle {
+  private double radius;
+
+  public Circle(double r) {
+    radius = r;
+  }
+
+  public double getRadius() {
+    return radius;
+  }
+
+  public double getArea() {
+    return calc.math.pi * radius * radius;
+  }
+
+}
+
 public class DnDWebBrowser extends JFrame {
 
   private WebToolBar toolBar;
