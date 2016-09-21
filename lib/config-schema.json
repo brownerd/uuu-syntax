@@ -17,11 +17,13 @@
     "properties": {
       "backgroundcolor": {
         "title": "Background color",
+        "description": "**Languages**: All<br/>**Selects**: Editor window background",
         "type": "color",
         "default": "rgba(179, 179, 179, 1)"
       },
       "color": {
-        "title": "Text color for un-styled text",
+        "title": "Text color",
+        "description": "**Languages**: All<br/>**Selects**: Source code text color for UNstyled text, like text between html tags",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       }
@@ -34,6 +36,7 @@
     "properties": {
       "backgroundcolor": {
         "title": "Set background color",
+        "description": "**Languages**: All<br/>**Selects**: Gutter and line numbers",
         "type": "color",
         "default": "rgba(179, 179, 179, 1)"
       },
@@ -44,7 +47,7 @@
       },
       "punk": {
         "title": "Punk gutter",
-        "description": "For devs with attitudes",
+        "description": "For devs with attitudes!",
         "type": "string",
         "enum": ["hellyeah", "hellno"],
         "default": "hellyeah"
@@ -58,6 +61,7 @@
     "properties": {
       "backgroundcolor": {
         "title": "Background color",
+        "description": "**Languages**: All<br/>**Selects**: Current line and selected text",
         "type": "color",
         "default": "rgba(0, 255, 102, 1)"
       }
@@ -66,11 +70,11 @@
   "cursor": {
     "order": 4,
     "type": "object",
-    "title": "Cursor",
+    "title": "Cursor style",
     "properties": {
       "style": {
         "order": 1,
-        "title": "Bar, Block or Pacman Cursor style",
+        "title": "Bar, Block or Pacman cursor",
         "type": "string",
         "enum": ["bar", "block", "pacman"],
         "default": "pacman"
@@ -83,7 +87,8 @@
       },
       "shadow": {
         "order": 3,
-        "title": "*Cursor shadow - Pacman cursor only",
+        "title": "*Cursor shadow",
+        "description": "Pacman cursor only",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       }
@@ -97,12 +102,14 @@
       "linecolor": {
         "order": 1,
         "title": "Line color",
+        "description": "**Languages**: All<br/>**Selects**: Vertical line showing indentation",
         "type": "color",
         "default": "rgba(214, 214, 214, 1)"
       },
       "value": {
         "order": 2,
-        "title": "Indent guide darkness/lightness (-100 thru 100)",
+        "title": "Darkness / Lightness",
+        "description": "**Value range**: -100 thru 100",
         "type": "number",
         "default": 0,
         "minimum": -100,
@@ -117,6 +124,7 @@
     "properties": {
       "codecolor": {
         "title": "Code color",
+        "description": "**Languages**: All<br/>**Selects**: Text that has been folded",
         "type": "color",
         "default": "rgba(255, 0, 255, 1)"
       }
@@ -129,6 +137,7 @@
     "properties": {
       "backgroundcolor": {
         "title": "Background color",
+        "description": "**Languages**: All<br/>**Selects**: opening and closing brackets",
         "type": "color",
         "default": "rgba(255, 0, 255, 1)"
       }
@@ -137,11 +146,12 @@
   "comment": {
     "order": 8,
     "type": "object",
-    "title": "Comments (// /**/ <!-- --> # ---) for All languages",
+    "title": "Comments",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: All<br/>**Selects**: `// /**/ <!-- --> # ---`",
         "type": "color",
         "default": "rgba(153, 153, 153, 1)"
       },
@@ -154,7 +164,8 @@
       },
       "value": {
         "order": 3,
-        "title": "Comment darkness/lightness (-100 thru 100)",
+        "title": "Darkness / Lightness",
+        "description": "**Value range**: -100 thru 100",
         "type": "number",
         "default": 0,
         "minimum": -100,
@@ -165,11 +176,12 @@
   "selector": {
     "order": 9,
     "type": "object",
-    "title": "Selector (h1 p div .class #id a etc.) for CSS and pre-processors only",
+    "title": "Selector",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: CSS and pre-processors<br/>**Selects**: CSS Selector names",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -192,11 +204,12 @@
   "pseudo": {
     "order": 10,
     "type": "object",
-    "title": "Pseudo selectors (:hover :nth-child :after :not etc.) for CSS and pre-processors only",
+    "title": "Pseudo-selectors",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: CSS and pre-processors<br/>**Selects**: `:hover :focus :before :after :nth-child() :first-of-type` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -219,11 +232,12 @@
   "propertyname": {
     "order": 11,
     "type": "object",
-    "title": "Property name (font-size color width etc.) for CSS and pre-processors only",
+    "title": "Property name",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: CSS and pre-processors<br/>**Selects**: CSS property names like `font-size background-color height display` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -246,11 +260,12 @@
   "propertyvalue": {
     "order": 12,
     "type": "object",
-    "title": "Property value (#f00 sans-serif none inherit etc) for CSS and pre-processors only",
+    "title": "Property value",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: CSS and pre-processors<br/>**Selects**: CSS property values like `sans-serif yellow none inherit left 1px solid` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -273,11 +288,12 @@
   "unit": {
     "order": 13,
     "type": "object",
-    "title": "Unit (em rem % px vh vw vmin etc.) for CSS and pre-processors only",
+    "title": "Unit",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: CSS and pre-processors<br/>**Selects**: CSS property units like `em rem % px vh vw vmin vmax` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -300,11 +316,12 @@
   "number": {
    "order": 14,
    "type": "object",
-   "title": "Numbers (0-9 and null) for All languages",
+   "title": "Numbers",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All<br/>**Selects**: `0-9 null` ",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -327,11 +344,12 @@
   "punctuation": {
     "order": 15,
     "type": "object",
-    "title": "Punctuation (- : . , {} () [] ; <></>) for All languages",
+    "title": "Punctuation",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: All<br/>**Selects**: `- : . , {} () [] ; <></>` ",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -347,11 +365,12 @@
   "doctype": {
     "order": 16,
     "type": "object",
-    "title": "Doctype for HTML only",
+    "title": "Doctype",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: HTML Jade Slim Haml<br/>**Selects**: `Doctype` ",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -374,11 +393,12 @@
   "tag": {
     "order": 17,
     "type": "object",
-    "title": "Tag (h1 div p table etc.) for HTML only",
+    "title": "Tag names",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: HTML Jade Slim Haml<br/>**Selects**: `h1 div p table span a ul li` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -401,11 +421,12 @@
   "attributename": {
     "order": 18,
     "type": "object",
-    "title": "Attribute name (class id rel href src data etc.) for HTML only",
+    "title": "Attribute name",
     "properties": {
       "color": {
         "order": 1,
         "title": "Set text color",
+        "description": "**Languages**: HTML Jade Slim Haml<br/>**Selects**: `class id rel href src data` etc.",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
@@ -428,11 +449,12 @@
   "quotationmark": {
    "order": 19,
    "type": "object",
-   "title": "Quotation marks (`` '' \"\") for All languages",
+   "title": "Quotation marks",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set font color",
+       "description": "**Languages**: All<br/>**Selects**: `'' \"\" `` ` ",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -448,11 +470,12 @@
   "string": {
    "order": 20,
    "type": "object",
-   "title": "Strings ('any quoted text') for All languages",
+   "title": "Strings",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All<br/>**Selects**: 'all quoted text'",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -475,11 +498,12 @@
   "storage": {
    "order": 21,
    "type": "object",
-   "title": "Storage (var let const function parameters class public private =>) for all languages",
+   "title": "Storage",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All programming and pre-processor langs<br/>**Selects**: `var let const function parameters class public private =>`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -502,11 +526,12 @@
   "storagemodifier": {
    "order": 22,
    "type": "object",
-   "title": "Storage modifier (const extends static) for programming languages",
+   "title": "Storage modifier",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All programming langs<br/>**Selects**: `const extends static`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -529,11 +554,12 @@
   "operator": {
    "order": 23,
    "type": "object",
-   "title": "Operators and logic ()- * + - / > < = === !== >= <=) for All languages",
+   "title": "Operators and logic",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All<br/>**Selects**: `- * + - / % ~ ! !! != !==  > < = === !== >= <=`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -549,11 +575,12 @@
   "functionname": {
    "order": 24,
    "type": "object",
-   "title": "Function name for programming languages and pre-processors",
+   "title": "Function name",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: All programming and pre-processor langs<br/>**Selects**: name assigned to a function",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -576,11 +603,12 @@
   "class": {
    "order": 25,
    "type": "object",
-   "title": "Class name for programming langauages",
+   "title": "Class name",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: name assigned to a class",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -603,11 +631,12 @@
   "instance": {
    "order": 26,
    "type": "object",
-   "title": "Instance of a function for programming languages",
+   "title": "Instance of a function",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: name of the instance of a function like `new Rectangle`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -630,11 +659,12 @@
   "regex": {
    "order": 27,
    "type": "object",
-   "title": "Regex (/^[A-Za-z]+$/) for programming languages ",
+   "title": "Regex",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: Regular expressions `/^[A-Za-z]+$/`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -657,11 +687,12 @@
   "control": {
    "order": 28,
    "type": "object",
-   "title": "Control (return if else case switch die break while import from use etc.) for programming languages and pre-processors",
+   "title": "Control",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs and pre-processors<br/>**Selects**: `return if else case switch die break while import from use for`",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -684,11 +715,12 @@
   "constant": {
    "order": 29,
    "type": "object",
-   "title": "Constant name (as defined by user or language) for all languages",
+   "title": "Constant name",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: the name of a conatant that is created by the user or the programming language",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -704,11 +736,12 @@
   "boolean": {
    "order": 30,
    "type": "object",
-   "title": "Boolean (true false) for most programming languages an pre-processors",
+   "title": "Boolean",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs and pre-processor<br/>**Selects**: `true false` in most langauges",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -731,11 +764,12 @@
   "module": {
    "order": 31,
    "type": "object",
-   "title": "Module names for programming languages",
+   "title": "Module names",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: name assigned to a module",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -758,11 +792,12 @@
   "namespace": {
    "order": 32,
    "type": "object",
-   "title": "Namespace name for programming languages",
+   "title": "Namespace name",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Programming langs<br/>**Selects**: name assigned to a namespace",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -785,11 +820,12 @@
   "type": {
    "order": 33,
    "type": "object",
-   "title": "Type name for Functional langauages and some OOP langauages",
+   "title": "Type name",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Functional langauages and some OOP langauages<br/>**Selects**: name assigned to a type",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -812,11 +848,12 @@
   "identifier": {
    "order": 34,
    "type": "object",
-   "title": "Identifier for Haskell only",
+   "title": "Identifier",
    "properties": {
      "color": {
        "order": 1,
        "title": "Set text color",
+       "description": "**Languages**: Haskell<br/>**Selects**: identifiers :)",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -843,6 +880,7 @@
      "lineaddedcolor": {
        "order": 1,
        "title": "Line added color",
+       "description": "Styles the gutter to indicate new, modified and removed lines of code",
        "type": "color",
        "default": "rgba(0, 255, 102, 1)"
      },
