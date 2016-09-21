@@ -13,9 +13,10 @@
 //   YAML - none
 
 .class,
-.entity.other.inherited-class.scala{
+.entity.other.inherited-class.scala,
+.storage.type.cpp {
   //.test();
-  color: darken(@class-color, 25);
+  color: @class-color;
   font-style: @class-fontstyle;
   font-weight: @class-weight;
 }
@@ -33,9 +34,12 @@
 //   SCSS - same
 //   stylus - same
 //   PHP same
+
 .function.name,
 .function.go,
-.entity.global.clojure {
+.function.any-method,
+.entity.global.clojure,
+.entity.other.inherited-class.haskell {
   //.test();
   color: @functionname-color;
   font-style: @functionname-fontstyle;

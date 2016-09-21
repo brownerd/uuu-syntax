@@ -5,8 +5,10 @@
 .comment .hyperlink,
 .punctuation.definition.comment,
 .punctuation.definition.comment.html,
-.punctuation.section.comment.haml  {
-  color: @comment-color;
+.punctuation.section.comment.haml,
+.string.comment.buffered.block.jade  {
+  .color(@comment-color, @comment-value);
+  color: @color;
   font-style: @comment-fontstyle;
   font-weight: normal;
 }

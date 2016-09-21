@@ -1,5 +1,12 @@
 @import 'colors';
 
+// Color mixin function
+.color(@kolor, @value: 0) {
+  @color: lighten(@kolor, (@value / 2) * 1%);
+}
+
+
+
 // Editor styles
 @editor-color: @charcoal;
 @editor-backgroundcolor: @graphite;
@@ -8,6 +15,7 @@
 // Comment styles
 @comment-color: @lead;
 @comment-fontstyle: normal;
+@comment-value: 0;
 
 
 // Pacman cursor style
@@ -38,6 +46,7 @@
 
 // Indent line color style
 @indentguide-linecolor: @white;
+@indentguide-value: 0;
 
 
 

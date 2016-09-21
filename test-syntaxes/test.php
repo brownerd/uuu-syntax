@@ -1,4 +1,36 @@
 
+<?php namespace foo;
+  class Cat {
+    static function says() {echo 'meoow';}  } ?>
+
+
+<?php namespace bar;
+  class Dog {
+    static function says() {echo 'ruff';}  } ?>
+
+<?php namespace animate;
+  class Animal {
+    static function breathes() {echo 'air';}  } ?>
+
+
+<?php namespace fub;
+  include 'file1.php';
+  include 'file2.php';
+  include 'file3.php';
+  use foo as feline;
+  use bar as canine;
+  use animate;
+  echo \feline\Cat::says(), "<br />\n";
+  echo \canine\Dog::says(), "<br />\n";
+  echo \animate\Animal::breathes(), "<br />\n";  ?>
+
+
+
+
+
+
+
+
 <?php
 // /database/migrations/seeds/ProjectsTableSeeder.php
 

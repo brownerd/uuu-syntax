@@ -15,10 +15,13 @@
 // Sass gets this wrong
 .variable,
 .variable.php,
+.storage.type.class,
 .interpolation,
 .keyword.control.clojure,
 .meta.symbol.clojure,
-.keyword.declaration.scala {
+.keyword.declaration.scala,
+.keyword.other.namespace,
+.storage.type.data.haskell {
 
   //.test();
   color: @storage-color;
@@ -39,7 +42,8 @@
 
 
 // Storage modifier - const extends static
-.storage.modifier {
+.storage.modifier,
+.keyword.declaration.swift {
   color: @storagemodifier-color;
   font-style: @storagemodifier-fontstyle;
   font-weight: @storagemodifier-weight;
