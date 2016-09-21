@@ -48,14 +48,14 @@ const nada = null;
 
 const nada = 'blah';
 
-var re = new RegExp("ab+c");
+var re = new RegExp("^[A-Za-z]+$");
 
 function Cat (name) {
   this.name = name;
 };
 
 const you = [1,2,3,4,5]
-var re = /ab+c/;
+var re = /^[A-Za-z]+$/;
 
 var arr = [23];
 
