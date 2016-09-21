@@ -15,15 +15,15 @@
     "type": "object",
     "title": "Editor",
     "properties": {
-      "color": {
-        "title": "Text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
-      },
       "backgroundcolor": {
         "title": "Background color",
         "type": "color",
         "default": "rgba(179, 179, 179, 1)"
+      },
+      "color": {
+        "title": "Text color for un-styled text",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
       }
     }
   },
@@ -63,32 +63,8 @@
       }
     }
   },
-  "indentguide": {
-    "order": 4,
-    "type": "object",
-    "title": "Indent guide",
-    "properties": {
-      "linecolor": {
-        "title": "Line color",
-        "type": "color",
-        "default": "rgba(214, 214, 214, 1)"
-      }
-    }
-  },
-  "folded": {
-    "order": 5,
-    "type": "object",
-    "title": "Folded code",
-    "properties": {
-      "codecolor": {
-        "title": "Code color",
-        "type": "color",
-        "default": "rgba(255, 0, 255, 1)"
-      }
-    }
-  },
   "cursor": {
-    "order": 6,
+    "order": 4,
     "type": "object",
     "title": "Cursor",
     "properties": {
@@ -113,6 +89,39 @@
       }
     }
   },
+  "indentguide": {
+    "order": 5,
+    "type": "object",
+    "title": "Indent guide",
+    "properties": {
+      "linecolor": {
+        "order": 1,
+        "title": "Line color",
+        "type": "color",
+        "default": "rgba(214, 214, 214, 1)"
+      },
+      "value": {
+        "order": 2,
+        "title": "Indent guide darkness/lightness (-100 thru 100)",
+        "type": "number",
+        "default": 0,
+        "minimum": -100,
+        "maximum": 100
+      }
+    }
+  },
+  "folded": {
+    "order": 6,
+    "type": "object",
+    "title": "Folded code",
+    "properties": {
+      "codecolor": {
+        "title": "Code color",
+        "type": "color",
+        "default": "rgba(255, 0, 255, 1)"
+      }
+    }
+  },
   "bracketmatcher": {
     "order": 7,
     "type": "object",
@@ -128,7 +137,7 @@
   "comment": {
     "order": 8,
     "type": "object",
-    "title": "Comments - // /**/ <!-- --> # ---",
+    "title": "Comments (// /**/ <!-- --> # ---) for All languages",
     "properties": {
       "color": {
         "order": 1,
@@ -142,181 +151,21 @@
         "type": "string",
         "enum": ["normal", "italic"],
         "default": "normal"
-      }
-    }
-  },
-  "punctuation": {
-    "order": 9,
-    "type": "object",
-    "title": "Punctuation - : . , {} () [] ; <></>",
-    "properties": {
-      "color": {
-        "order": 1,
-        "title": "Set text color",
-        "type": "color",
-        "default": "rgba(51, 51, 51, 1)"
       },
-      "weight": {
-        "order": 2,
-        "title": "Font weight",
-        "type": "string",
-        "enum": ["normal", "bold"],
-        "default": "bold"
-      }
-    }
-  },
-  "quotationmark": {
-   "order": 10,
-   "type": "object",
-   "title": "Quotation marks",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set font color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "bold"
-      }
-    }
-  },
-  "string": {
-   "order": 11,
-   "type": "object",
-   "title": "Strings - any quoted text",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "fontstyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "italic"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "normal"
-      }
-    }
-  },
-  "operator": {
-   "order": 12,
-   "type": "object",
-   "title": "Operator and logic  - * + - / > < = === !== >= <=",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "bold"
-      }
-    }
-  },
-  "number": {
-   "order": 13,
-   "type": "object",
-   "title": "Numbers - 0-9 and null",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "fontstyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "normal"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "normal"
-      }
-    }
-  },
-  "storage": {
-   "order": 14,
-   "type": "object",
-   "title": "Storage - variables var let const function parameters class public private =>",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "fontstyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "normal"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "bold"
-      }
-    }
-  },
-  "storagemodifier": {
-   "order": 15,
-   "type": "object",
-   "title": "Storage modifier - const extends static",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "fontstyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "normal"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "bold"
+      "value": {
+        "order": 3,
+        "title": "Comment darkness/lightness (-100 thru 100)",
+        "type": "number",
+        "default": 0,
+        "minimum": -100,
+        "maximum": 100
       }
     }
   },
   "selector": {
-    "order": 16,
+    "order": 9,
     "type": "object",
-    "title": "Selector - CSS only",
+    "title": "Selector (h1 p div .class #id a etc.) for CSS and pre-processors only",
     "properties": {
       "color": {
         "order": 1,
@@ -340,10 +189,37 @@
       }
     }
   },
-  "propertyname": {
-    "order": 17,
+  "pseudo": {
+    "order": 10,
     "type": "object",
-    "title": "Property name - CSS only",
+    "title": "Pseudo selectors (:hover :nth-child :after :not etc.) for CSS and pre-processors only",
+    "properties": {
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
+      },
+      "fontstyle": {
+        "order": 2,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      },
+      "weight": {
+        "order": 3,
+        "title": "Font weight",
+        "type": "string",
+        "enum": ["normal", "bold"],
+        "default": "normal"
+      }
+    }
+  },
+  "propertyname": {
+    "order": 11,
+    "type": "object",
+    "title": "Property name (font-size color width etc.) for CSS and pre-processors only",
     "properties": {
       "color": {
         "order": 1,
@@ -368,9 +244,9 @@
     }
   },
   "propertyvalue": {
-    "order": 18,
+    "order": 12,
     "type": "object",
-    "title": "Property value - CSS only",
+    "title": "Property value (#f00 sans-serif none inherit etc) for CSS and pre-processors only",
     "properties": {
       "color": {
         "order": 1,
@@ -395,9 +271,9 @@
     }
   },
   "unit": {
-    "order": 19,
+    "order": 13,
     "type": "object",
-    "title": "Unit - CSS only",
+    "title": "Unit (em rem % px vh vw vmin etc.) for CSS and pre-processors only",
     "properties": {
       "color": {
         "order": 1,
@@ -421,10 +297,37 @@
       }
     }
   },
-  "pseudo": {
-    "order": 20,
+  "number": {
+   "order": 14,
+   "type": "object",
+   "title": "Numbers (0-9 and null) for All languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "punctuation": {
+    "order": 15,
     "type": "object",
-    "title": "Pseudo selectors - CSS only",
+    "title": "Punctuation (- : . , {} () [] ; <></>) for All languages",
     "properties": {
       "color": {
         "order": 1,
@@ -432,26 +335,19 @@
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
-      "fontstyle": {
-        "order": 2,
-        "title": "Font style",
-        "type": "string",
-        "enum": ["normal", "italic"],
-        "default": "normal"
-      },
       "weight": {
-        "order": 3,
+        "order": 2,
         "title": "Font weight",
         "type": "string",
         "enum": ["normal", "bold"],
-        "default": "normal"
+        "default": "bold"
       }
     }
   },
   "doctype": {
-    "order": 21,
+    "order": 16,
     "type": "object",
-    "title": "Doctype - HTML only",
+    "title": "Doctype for HTML only",
     "properties": {
       "color": {
         "order": 1,
@@ -476,9 +372,9 @@
     }
   },
   "tag": {
-    "order": 22,
+    "order": 17,
     "type": "object",
-    "title": "Tag - HTML only",
+    "title": "Tag (h1 div p table etc.) for HTML only",
     "properties": {
       "color": {
         "order": 1,
@@ -503,9 +399,9 @@
     }
   },
   "attributename": {
-    "order": 23,
+    "order": 18,
     "type": "object",
-    "title": "Attribute name - HTML only",
+    "title": "Attribute name (class id rel href src data etc.) for HTML only",
     "properties": {
       "color": {
         "order": 1,
@@ -529,10 +425,131 @@
       }
     }
   },
+  "quotationmark": {
+   "order": 19,
+   "type": "object",
+   "title": "Quotation marks (`` '' \"\") for All languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set font color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "string": {
+   "order": 20,
+   "type": "object",
+   "title": "Strings ('any quoted text') for All languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "italic"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "storage": {
+   "order": 21,
+   "type": "object",
+   "title": "Storage (var let const function parameters class public private =>) for all languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "storagemodifier": {
+   "order": 22,
+   "type": "object",
+   "title": "Storage modifier (const extends static) for programming languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
+  "operator": {
+   "order": 23,
+   "type": "object",
+   "title": "Operators and logic ()- * + - / > < = === !== >= <=) for All languages",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "bold"
+      }
+    }
+  },
   "functionname": {
    "order": 24,
    "type": "object",
-   "title": "Function name",
+   "title": "Function name for programming languages and pre-processors",
    "properties": {
      "color": {
        "order": 1,
@@ -559,7 +576,7 @@
   "class": {
    "order": 25,
    "type": "object",
-   "title": "Class - Programming only",
+   "title": "Class name for programming langauages",
    "properties": {
      "color": {
        "order": 1,
@@ -583,37 +600,10 @@
      }
    }
   },
-  "control": {
+  "instance": {
    "order": 26,
    "type": "object",
-   "title": "Control - return, if, else, case, switch, die, break, while, import, from",
-   "properties": {
-     "color": {
-       "order": 1,
-       "title": "Set text color",
-       "type": "color",
-       "default": "rgba(51, 51, 51, 1)"
-     },
-     "fontstyle": {
-       "order": 2,
-       "title": "Font style",
-       "type": "string",
-       "enum": ["normal", "italic"],
-       "default": "normal"
-     },
-     "weight": {
-       "order": 3,
-       "title": "Font weight",
-       "type": "string",
-       "enum": ["normal", "bold"],
-       "default": "normal"
-      }
-    }
-  },
-  "instance": {
-   "order": 27,
-   "type": "object",
-   "title": "Instance of a function",
+   "title": "Instance of a function for programming languages",
    "properties": {
      "color": {
        "order": 1,
@@ -638,9 +628,36 @@
     }
   },
   "regex": {
+   "order": 27,
+   "type": "object",
+   "title": "Regex (/^[A-Za-z]+$/) for programming languages ",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set text color",
+       "type": "color",
+       "default": "rgba(51, 51, 51, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "control": {
    "order": 28,
    "type": "object",
-   "title": "Regex - /ab+c/",
+   "title": "Control (return if else case switch die break while import from use etc.) for programming languages and pre-processors",
    "properties": {
      "color": {
        "order": 1,
@@ -667,7 +684,7 @@
   "constant": {
    "order": 29,
    "type": "object",
-   "title": "Constant",
+   "title": "Constant name (as defined by user or language) for all languages",
    "properties": {
      "color": {
        "order": 1,
@@ -687,7 +704,7 @@
   "boolean": {
    "order": 30,
    "type": "object",
-   "title": "Boolean - true, false",
+   "title": "Boolean (true false) for most programming languages an pre-processors",
    "properties": {
      "color": {
        "order": 1,
@@ -714,7 +731,7 @@
   "module": {
    "order": 31,
    "type": "object",
-   "title": "Module",
+   "title": "Module names for programming languages",
    "properties": {
      "color": {
        "order": 1,
@@ -741,7 +758,7 @@
   "namespace": {
    "order": 32,
    "type": "object",
-   "title": "Namespace",
+   "title": "Namespace name for programming languages",
    "properties": {
      "color": {
        "order": 1,
@@ -768,7 +785,7 @@
   "type": {
    "order": 33,
    "type": "object",
-   "title": "Type",
+   "title": "Type name for Functional langauages and some OOP langauages",
    "properties": {
      "color": {
        "order": 1,
@@ -795,7 +812,7 @@
   "identifier": {
    "order": 34,
    "type": "object",
-   "title": "Identifier - Haskell",
+   "title": "Identifier for Haskell only",
    "properties": {
      "color": {
        "order": 1,
