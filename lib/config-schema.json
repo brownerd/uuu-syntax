@@ -35,17 +35,29 @@
     "title": "Gutter",
     "properties": {
       "backgroundcolor": {
+        "order": 1,
         "title": "Set background color",
-        "description": "**Languages**: All<br/>**Selects**: Gutter and line numbers",
+        "description": "Selects**: Gutter and line numbers",
         "type": "color",
         "default": "rgba(179, 179, 179, 1)"
       },
       "color": {
-        "title": "Text color",
+        "order": 2,
+        "title": "Line number color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
+      "value": {
+        "order": 3,
+        "title": "Line number Darkness / Lightness",
+        "description": "**Value range**: -100 thru 100",
+        "type": "number",
+        "default": 0,
+        "minimum": -100,
+        "maximum": 100
+      },
       "punk": {
+        "order": 4,
         "title": "Punk gutter",
         "description": "For devs with attitudes!",
         "type": "string",
@@ -54,21 +66,80 @@
       }
     }
   },
-  "selectedline": {
+  "indentguide": {
     "order": 3,
+    "type": "object",
+    "title": "Indent guide",
+    "properties": {
+      "linecolor": {
+        "order": 1,
+        "title": "Line color",
+        "description": "**Languages**: All<br/>**Selects**: Vertical line showing indentation",
+        "type": "color",
+        "default": "rgba(214, 214, 214, 1)"
+      },
+      "value": {
+        "order": 2,
+        "title": "Darkness / Lightness",
+        "description": "**Value range**: -100 thru 100",
+        "type": "number",
+        "default": 0,
+        "minimum": -100,
+        "maximum": 100
+      }
+    }
+  },
+  "comment": {
+    "order": 4,
+    "type": "object",
+    "title": "Comments",
+    "properties": {
+      "color": {
+        "order": 1,
+        "title": "Set text color",
+        "description": "**Languages**: All<br/>**Selects**: `// /**/ <!-- --> # ---`",
+        "type": "color",
+        "default": "rgba(153, 153, 153, 1)"
+      },
+      "value": {
+        "order": 2,
+        "title": "Darkness / Lightness",
+        "description": "**Value range**: -100 thru 100",
+        "type": "number",
+        "default": 0,
+        "minimum": -100,
+        "maximum": 100
+      },
+      "fontstyle": {
+        "order": 3,
+        "title": "Font style",
+        "type": "string",
+        "enum": ["normal", "italic"],
+        "default": "normal"
+      }
+    }
+  },
+  "selectedline": {
+    "order": 5,
     "type": "object",
     "title": "Selected line(s)",
     "properties": {
       "backgroundcolor": {
-        "title": "Background color",
-        "description": "**Languages**: All<br/>**Selects**: Current line and selected text",
+        "title": "Background color in EDITOR",
+        "description": "**Languages**: All<br/>**Selects**: Current line and selected text in the EDITOR window",
         "type": "color",
         "default": "rgba(0, 255, 102, 1)"
+      },
+      "backgroundguttercolor": {
+        "title": "Background color in GUTTER",
+        "description": "**Languages**: All<br/>**Selects**: Current line and selected text in the GUTTER",
+        "type": "color",
+        "default": "rgba(51, 51, 51, 1)"
       }
     }
   },
   "cursor": {
-    "order": 4,
+    "order": 6,
     "type": "object",
     "title": "Cursor style",
     "properties": {
@@ -94,31 +165,8 @@
       }
     }
   },
-  "indentguide": {
-    "order": 5,
-    "type": "object",
-    "title": "Indent guide",
-    "properties": {
-      "linecolor": {
-        "order": 1,
-        "title": "Line color",
-        "description": "**Languages**: All<br/>**Selects**: Vertical line showing indentation",
-        "type": "color",
-        "default": "rgba(214, 214, 214, 1)"
-      },
-      "value": {
-        "order": 2,
-        "title": "Darkness / Lightness",
-        "description": "**Value range**: -100 thru 100",
-        "type": "number",
-        "default": 0,
-        "minimum": -100,
-        "maximum": 100
-      }
-    }
-  },
   "folded": {
-    "order": 6,
+    "order": 7,
     "type": "object",
     "title": "Folded code",
     "properties": {
@@ -131,7 +179,7 @@
     }
   },
   "bracketmatcher": {
-    "order": 7,
+    "order": 8,
     "type": "object",
     "title": "Bracket Matcher",
     "properties": {
@@ -140,36 +188,6 @@
         "description": "**Languages**: All<br/>**Selects**: opening and closing brackets",
         "type": "color",
         "default": "rgba(255, 0, 255, 1)"
-      }
-    }
-  },
-  "comment": {
-    "order": 8,
-    "type": "object",
-    "title": "Comments",
-    "properties": {
-      "color": {
-        "order": 1,
-        "title": "Set text color",
-        "description": "**Languages**: All<br/>**Selects**: `// /**/ <!-- --> # ---`",
-        "type": "color",
-        "default": "rgba(153, 153, 153, 1)"
-      },
-      "fontstyle": {
-        "order": 2,
-        "title": "Font style",
-        "type": "string",
-        "enum": ["normal", "italic"],
-        "default": "normal"
-      },
-      "value": {
-        "order": 3,
-        "title": "Darkness / Lightness",
-        "description": "**Value range**: -100 thru 100",
-        "type": "number",
-        "default": 0,
-        "minimum": -100,
-        "maximum": 100
       }
     }
   },
@@ -600,8 +618,36 @@
       }
     }
   },
-  "class": {
+  "consolelog": {
    "order": 25,
+   "type": "object",
+   "title": "console.log()",
+   "properties": {
+     "color": {
+       "order": 1,
+       "title": "Set console.log() color",
+       "description": "**Languages**: JavaScript<br/>**Selects**: `console.log()`",
+       "type": "color",
+       "default": "rgba(255, 0, 0, 1)"
+     },
+     "fontstyle": {
+       "order": 2,
+       "title": "Font style",
+       "type": "string",
+       "enum": ["normal", "italic"],
+       "default": "normal"
+     },
+     "weight": {
+       "order": 3,
+       "title": "Font weight",
+       "type": "string",
+       "enum": ["normal", "bold"],
+       "default": "normal"
+      }
+    }
+  },
+  "class": {
+   "order": 26,
    "type": "object",
    "title": "Class name",
    "properties": {
@@ -629,7 +675,7 @@
    }
   },
   "instance": {
-   "order": 26,
+   "order": 27,
    "type": "object",
    "title": "Instance of a function",
    "properties": {
@@ -657,7 +703,7 @@
     }
   },
   "regex": {
-   "order": 27,
+   "order": 28,
    "type": "object",
    "title": "Regex",
    "properties": {
@@ -685,7 +731,7 @@
     }
   },
   "control": {
-   "order": 28,
+   "order": 29,
    "type": "object",
    "title": "Control",
    "properties": {
@@ -713,7 +759,7 @@
     }
   },
   "constant": {
-   "order": 29,
+   "order": 30,
    "type": "object",
    "title": "Constant name",
    "properties": {
@@ -734,7 +780,7 @@
     }
   },
   "boolean": {
-   "order": 30,
+   "order": 31,
    "type": "object",
    "title": "Boolean",
    "properties": {
@@ -762,7 +808,7 @@
     }
   },
   "module": {
-   "order": 31,
+   "order": 32,
    "type": "object",
    "title": "Module names",
    "properties": {
@@ -790,7 +836,7 @@
     }
   },
   "namespace": {
-   "order": 32,
+   "order": 33,
    "type": "object",
    "title": "Namespace name",
    "properties": {
@@ -818,7 +864,7 @@
     }
   },
   "type": {
-   "order": 33,
+   "order": 34,
    "type": "object",
    "title": "Type name",
    "properties": {
@@ -846,7 +892,7 @@
     }
   },
   "identifier": {
-   "order": 34,
+   "order": 35,
    "type": "object",
    "title": "Identifier",
    "properties": {
