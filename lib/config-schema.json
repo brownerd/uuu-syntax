@@ -16,14 +16,16 @@
     "title": "Editor",
     "properties": {
       "backgroundcolor": {
+        "order": 1,
         "title": "Background color",
-        "description": "**Languages**: All<br/>**Selects**: Editor window background",
+        "description":"**Selects**: Editor window background",
         "type": "color",
         "default": "rgba(179, 179, 179, 1)"
       },
       "color": {
+        "order": 2,
         "title": "Text color",
-        "description": "**Languages**: All<br/>**Selects**: Source code text color for UNstyled text, like text between html tags",
+        "description": "**Languages**: All<br/>**Selects**: Source code text color for UNstyled text, like paragraph text in HTML",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       }
