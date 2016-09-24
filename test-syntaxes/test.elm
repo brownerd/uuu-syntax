@@ -7,7 +7,6 @@ import Json.Decode as Json
 import Task
 
 
-
 main =
   App.program
     { init = init "cats"
@@ -32,7 +31,6 @@ init topic =
   ( Model topic "waiting.gif"
   , getRandomGif topic
   )
-
 
 
 -- UPDATE

@@ -44,7 +44,7 @@ var hello = function whatsThis() {
 
 let house = require('ramda');
 
-const nada = null;
+const nada = !!null;
 
 const nada = 'blah';
 

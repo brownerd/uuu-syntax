@@ -8,7 +8,7 @@
   &.cursor-line {
 
     & when (@gutter-punk = hellyeah) {
-      background-color: @editor-color;
+      background-color: @selectedline-backgroundguttercolor;
     }
 
     color: @selectedline-backgroundcolor;
@@ -18,7 +18,7 @@
     & when (@gutter-punk = hellyeah) {
       // PUNK GUTTER > Triangle indicator
       &:after {
-        border-color: @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundcolor @editor-color;
+        border-color: @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundguttercolor;
         content: "";
         height: 1px;
         border-width: .75em; //1rem
