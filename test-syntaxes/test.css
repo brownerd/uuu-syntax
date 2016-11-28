@@ -6,6 +6,14 @@
  *    user zoom.
  */
 
+.classez {
+  color: red;
+}
+
+#hello {
+  color: red;
+}
+
 html:after {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -76,6 +84,7 @@ audio:not([controls]) {
  */
 
 [hidden],
+[class*="next__"]
 template {
   display: none;
 }

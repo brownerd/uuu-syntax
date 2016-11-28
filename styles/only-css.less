@@ -1,8 +1,18 @@
 // Only
 // CSS - Selectors only
-// .name.tag.css
+
 .selector,
-.class.css {
+.name.tag.css,
+.name.tag.postcss,
+
+.attribute.css,
+.attribute.postcss,
+
+.attribute-name.css,
+.attribute-name.postcss,
+
+.attribute-value.css,
+.attribute-value.postcss {
   // entity other attribute-name class css
   // this will select classes in proprocessors too
   // .test();
@@ -94,10 +104,11 @@
 }
 
 
-
 // Selects pseudo-selectors
-.pseudo-element,
-.pseudo-class {
+.pseudo-element.css,
+.pseudo-class.css,
+.pseudo-element.scss,
+.pseudo-class.scss {
   //.test();
   color: @pseudo-color;
   font-style: @pseudo-fontstyle;

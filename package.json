@@ -1,14 +1,14 @@
 {
-  "name": "uuu-syntax",
+  "name": "urawsm-syntax",
   "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A hackable syntax theme that UUU can style",
+  "description": "A hackable syntax theme that urawsm can style",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/uuu-syntax",
+  "repository": "https://github.com/atom/urawsm-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
