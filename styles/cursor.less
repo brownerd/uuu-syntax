@@ -10,12 +10,16 @@
   & when (@cursor-style = pacman) {
 
     border: 0;
+    left: 0!important;
+    border-left-width: 0!important;
+    // blink cursor
+    opacity: 1!important;
 
     // !
     // Adding this will cause the colors in pigment package to
     // be missaligned. So don't put position: relative on .cursor {}
 
-    // position: relative;
+    position: relative;
 
     &::after {
 
@@ -68,7 +72,7 @@ atom-text-editor::shadow .cursor {
 atom-text-editor::shadow .is-focused .cursors .cursor {
   & when (@cursor-style = pacman) {
     opacity: 1;
-    left: 1px
+    left: 1px;
   }
 }
 

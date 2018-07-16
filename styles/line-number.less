@@ -2,7 +2,8 @@
 // cursor line
 // folded
 
-.line-number {
+div.line-number {
+  overflow: hidden;
   padding-right: 1rem;
 
   &.cursor-line {
@@ -18,13 +19,14 @@
     & when (@gutter-punk = hellyeah) {
       // PUNK GUTTER > Triangle indicator
       &:after {
-        border-color: @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundguttercolor;
+        border-color: @editor-backgroundcolor @editor-backgroundcolor @editor-backgroundcolor @selectedline-backgroundguttercolor;
         content: "";
         height: 1px;
-        border-width: .75em; //1rem
+        //border-width: .7rem; //1rem
+        border-width: .8em;
         border-style: solid;
         position: absolute;
-        transform: translate(5px, 0px);
+        // transform: translate(5px, 0px);
       }
     }
   }

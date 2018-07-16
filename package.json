@@ -3,7 +3,7 @@
   "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A hackable syntax theme that urawsm can style",
+  "description": "URAWSM! Make UR own AWSM syntax styles!",
   "keywords": [
     "syntax",
     "theme"
