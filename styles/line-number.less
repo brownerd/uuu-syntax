@@ -12,7 +12,10 @@ div.line-number {
       background-color: @selectedline-backgroundguttercolor;
     }
 
-    color: @selectedline-backgroundcolor;
+    // The contrast function is cool
+    // You give it a base color and it will
+    // create a lighter or darker color to contrast the base color
+    color: contrast(@selectedline-backgroundguttercolor);
     position: relative;
 
 
@@ -55,3 +58,11 @@ div.line-number {
 }
 
 // .gutter .line-number.folded .icon-right::before, .gutter:hover .line-number.folded .icon-right::before
+
+
+atom-text-editor .line-number {
+  // padding-left: .5em;
+  // white-space: nowrap;
+  opacity: 1; //0.6;
+  // position: relative;
+}

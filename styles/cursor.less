@@ -2,6 +2,8 @@
 // https://atom.io/packages/block-cursor
 // https://discuss.atom.io/t/how-to-stop-the-blinking-of-cursor/22790/4
 
+// Starting from Atom v1.13.0, the contents of atom-text-editor elements are no longer encapsulated within a shadow DOM boundary. This means you should stop using :host and ::shadow pseudo-selectors, and prepend all your syntax selectors with syntax--. To prevent breakage with existing style sheets, Atom will automatically upgrade the following selectors:
+
 // Pacman Cursor
 .cursor {
   font-size: inherit;
@@ -40,8 +42,8 @@
       background-color: @cursor-color;
       border-radius: 50%;
       content: '';
-      height: calc(2em * .65px);
-      width: calc(2em * .65px);
+      height: calc(2em * .7px);
+      width: calc(2em * .7px);
       position: absolute;
       z-index: -1;
       opacity: 0;
@@ -60,7 +62,8 @@
 
 
 // Bar cursor
-atom-text-editor::shadow .cursor {
+// atom-text-editor::shadow .cursor {
+atom-text-editor.editor .cursor {
   & when (@cursor-style = bar) {
     border-color: @cursor-color;
     border-left-width: 2px;
@@ -69,7 +72,8 @@ atom-text-editor::shadow .cursor {
 
 
 // Another setting for the pacman cursor
-atom-text-editor::shadow .is-focused .cursors .cursor {
+// atom-text-editor::shadow .is-focused .cursors .cursor {
+atom-text-editor.editor .is-focused .cursors .cursor {
   & when (@cursor-style = pacman) {
     opacity: 1;
     left: 1px;
