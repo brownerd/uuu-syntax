@@ -12,16 +12,16 @@
 //   Vue - none
 //   YAML - none
 
-.class,
-.entity.other.inherited-class.scala,
-.storage.type.cpp {
+.syntax--class,
+.syntax--entity.syntax--other.syntax--inherited-class.syntax--scala,
+.syntax--storage.syntax--type.syntax--cpp {
   //.test();
   color: @class-color;
   font-style: @class-fontstyle;
   font-weight: @class-weight;
 }
 
-.constructor.js {
+.syntax--constructor.syntax--js {
   // .test();
   //color: spin(@class-color, 180);
   // font-style: @class-fontstyle;
@@ -35,11 +35,12 @@
 //   stylus - same
 //   PHP same
 
-.function.name,
-.function.go,
-.function.any-method,
-.entity.global.clojure,
-.entity.other.inherited-class.haskell {
+// .syntax--entity.syntax--name.syntax--function.syntax--stylus
+.syntax--function.syntax--name,
+.syntax--function.syntax--go,
+.syntax--function.syntax--any-method,
+.syntax--entity.syntax--global.syntax--clojure,
+.syntax--entity.syntax--other.syntax--inherited-class.syntax--haskell {
   //.test();
   color: @functionname-color;
   font-style: @functionname-fontstyle;
@@ -47,7 +48,7 @@
 }
 
 
-.console.js {
+.syntax--console.syntax--js {
   color: @consolelog-color;
   font-style: @consolelog-fontstyle;
   font-weight: @consolelog-weight;
@@ -55,7 +56,7 @@
 
 
 // Methods in js
-.support.function {
+.syntax--support.syntax--function {
   //.test();
 }
 
@@ -63,21 +64,21 @@
 // .parameters selects a functions params
 //   JS - (), (params)
 //   SCSS - ","
-.parameters {
+.syntax--parameters {
   //.test();
   //I'm going to let storage handle this
 }
 
 
 // .function-call selects the function call  blah(1, 3);
-.function-call {
+.syntax--function-call {
   //.test();
 }
 
 
 // .method-call selects the whole method call
-.method-call,
-.meta.symbol.clojure {
+.syntax--method-call,
+.syntax--meta.syntax--symbol.syntax--clojure {
   //.test();
   // color: @method-color;
   // font-style: @method-fontstyle;
@@ -86,14 +87,14 @@
 
 
 // .arguments selcts the arguments of a function call
-.arguments {
+.syntax--arguments {
   //.test();
   //im going to let storage handle this
 }
 
 
 // .constructor selects constructors in JS
-.function.name.constructor {
+.syntax--function.syntax--name.syntax--constructor {
   //.test();
   color: @constructor-color;
   font-style: @constructor-fontstyle;
@@ -102,7 +103,7 @@
 
 
 // .instance selects new Error, new RegEx in JS
-.instance {
+.syntax--instance {
   //.test();
   color: @instance-color;
   font-style: @instance-fontstyle;

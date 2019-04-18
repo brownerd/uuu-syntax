@@ -11,17 +11,17 @@
 //   PHP - class, private, public, function keywords
 //   Vue - none
 //   YAML - none
-.storage,
+.syntax--storage,
 // Sass gets this wrong
-.variable,
-.variable.php,
-.storage.type.class,
-.interpolation,
-.keyword.control.clojure,
-.meta.symbol.clojure,
-.keyword.declaration.scala,
-.keyword.other.namespace,
-.storage.type.data.haskell {
+.syntax--variable,
+.syntax--variable.syntax--php,
+.syntax--storage.syntax--type.syntax--class,
+.syntax--interpolation,
+.syntax--keyword.syntax--control.syntax--clojure,
+.syntax--meta.syntax--symbol.syntax--clojure,
+.syntax--keyword.syntax--declaration.syntax--scala,
+.syntax--keyword.syntax--other.syntax--namespace,
+.syntax--storage.syntax--type.syntax--data.syntax--haskell {
 
   //.test();
   color: @storage-color;
@@ -35,15 +35,15 @@
 }
 
 // This is a fix for Sass
-.variable > .string.scss {
+.syntax--variable > .syntax--string.syntax--scss {
   color: @editor-color;
 }
 
 
 
 // Storage modifier - const extends static
-.storage.modifier,
-.keyword.declaration.swift {
+.syntax--storage.syntax--modifier,
+.syntax--keyword.syntax--declaration.syntax--swift {
   color: @storagemodifier-color;
   font-style: @storagemodifier-fontstyle;
   font-weight: @storagemodifier-weight;

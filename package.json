@@ -1,14 +1,14 @@
 {
-  "name": "urawsm-syntax",
+  "name": "uuu-syntax",
   "main": "./lib/main",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "URAWSM! Make UR own AWSM syntax styles in seconds!",
+  "version": "1.0.0",
+  "description": "UUU! Make UR own AWSM syntax styles in seconds!",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/urawsm-syntax",
+  "repository": "",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

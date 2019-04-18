@@ -1,23 +1,24 @@
-# URAWSM syntax-theme
+# uuu syntax-theme
 
 Make UR own AWMS syntax-theme easily.
 
 Just watch this [video]()
 
 ## Installation/Dependencies
-- Install [urawsm-syntax]() and activate it
-- Install [urawsm-ui]() and activate it
-- Install [urawsm-helper]() and activate it
-- Click on the gear icon to access settings for urawsm-syntax
+- Install [uuu-syntax]() and activate it
+- Install [uuu-ui]() and activate it
+- Install [uuu]() and activate it
+- Install [uuu-language-files]()
+- Help build a Theme Library [uraswm.com]()
+- Click on the gear icon to access settings for uuu-syntax
 - Style away!
 
 
 ## Usage
-1. Download [URAWSM Sample languages]()
+1. Download [uuu language files]()
 1. Open this project in Atom
-1. Install [Platformio IDE Termina](https://atom.io/packages/platformio-ide-terminal) for Atom
-1. Enter `atom --dev .` in your terminal from. This will open a new window that will be live reloaded on every update
-1. Goto Settings > Themes and click on the gear icon to access settings for urawsm-syntax
+1. Enable "dev mode". Goto View > Developer > Open In Dev Mode. This will enable live reloading. *You don't need to use Dev Mode. If you don't you will need to Reload the page manualy*
+1. Goto Settings > Themes and click on the gear icon to access settings for uuu-syntax
 1. Just start at the top of the settings and work your way down. Make one change, and then check it out.
 
 
@@ -29,7 +30,7 @@ If your style doesn't show, or it if looks like all the styles reverted to the d
 
 
 ## Import/Export
-At some point you will want to export, import and save your cool, clever and quickly made syntaxes. You will need [URAWSM-Helper]() installed. Follow instructions there for exporting and importing.
+At some point you will want to export, import and save your cool, clever and quickly made syntaxes. You will need [uuu]() installed. Follow instructions there for exporting and importing.
 
 
 
@@ -37,11 +38,11 @@ At some point you will want to export, import and save your cool, clever and qui
 
 ## Extras!
 
-**URAWSM-UI**
-If you want to edit urawsmr UI also, then install [URAWSM-UI]() and enjoy the same freedom to edit URAWSM UI also.
+**uuu-UI**
+If you want to edit uuur UI also, then install [uuu-UI]() and enjoy the same freedom to edit uuu UI also.
 
-**URAWSM-Helper**
-If you want to export and import your Syntaxes and UIs, then install [urawsm-helper]().
+**uuu**
+If you want to export and import your Syntaxes and UIs, then install [uuu-helper]().
 
 **File icons**
 I got these from [File Icons](https://atom.io/packages/file-icons).
@@ -54,7 +55,7 @@ If you want more from a monospaced font, check out [Monoid](https://larsenwork.c
 
 
 ## Notes:
-URAWSM-UI, lets you modify just about everything that it can. However, it can't cover EVERY possible plugin that you are using.
+uuu-UI, lets you modify just about everything that it can. However, it can't cover EVERY possible plugin that you are using.
 
 ## Issues/Requests
 If there is a special case that you need, then let me know. I can't promise that I can make an update, but I will look at the ticket and respond.

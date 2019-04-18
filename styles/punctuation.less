@@ -13,14 +13,14 @@
 
 // I don't think I'll use this for any styling
 
-.punctuation {
+.syntax--punctuation {
   // .test();
   // font-weight: bold;
 }
 
 
 
-// .separator selects
+// .syntax--separator selects
 //   CSS - : ;
 //   HTML - Nothing
 //   Jade - =
@@ -33,7 +33,7 @@
 //   Vue - Nothing
 //   YAML - :
 
-.separator {
+.syntax--separator {
   // .test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -54,7 +54,7 @@
 //   Vue - none
 //   YAML - none
 
-.terminator {
+.syntax--terminator {
   // .test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -63,7 +63,7 @@
 
 
 //.delimeter selects "." and "," in JS
-.delimiter {
+.syntax--delimiter {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -76,7 +76,7 @@
 // .assignment selects
 //   JS - =
 //   PHP - =
-.keyword.assignment {
+.syntax--keyword.syntax--assignment {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -85,7 +85,7 @@
 
 
 // .brace selects {} [] () in JS
-.brace {
+.syntax--brace {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -93,21 +93,21 @@
 
 
 // .bracket selects {} () in JS
-.bracket {
+.syntax--bracket {
   //.test();
   //font-weight: bold;
 }
 
 
 // .curly selects {} in JS
-.curly {
+.syntax--curly {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
 }
 
 // .round selects round brackets
-.round {
+.syntax--round {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
@@ -115,22 +115,22 @@
 
 
 //.square selects square brackets
-.square {
+.syntax--square {
   //.test();
   color: @punctuation-color;
   font-weight: @punctuation-weight;
 }
 
-.section,
-.definition  {
+.syntax--section,
+.syntax--definition  {
   color: @punctuation-color;
   font-weight: @punctuation-weight;
 }
 
 
 // This selects the angle brackes and ""  in HTML
-.punctuation.definition.html,
-.punctuation.definition.html {
+.syntax--punctuation.syntax--definition.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--html {
   color: @punctuation-color;
   font-weight: @punctuation-weight;
 }
@@ -152,7 +152,7 @@
 //   YAML - none
 
 // I don't think I'll use this for any styling
-.definition {
+.syntax--definition {
   //.test();
 }
 
@@ -173,7 +173,7 @@
 //   Vue - none
 //   YAML - none
 
-.rule {
+.syntax--rule {
   // .test();
 }
 
@@ -192,18 +192,18 @@
 //   Stylus - :
 //   Vue - Nothing
 //   YAML - :
-.key-value {
+.syntax--key-value {
   // .test();
 }
 
 
 // selects the "." in JS and JADE
-.period {
+.syntax--period {
   //.test();
 }
 
 
 // .comma selects commas in JS
-.comma {
+.syntax--comma {
   //.test();
 }

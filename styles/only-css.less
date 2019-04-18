@@ -1,24 +1,32 @@
 // Only
 // CSS - Selectors only
 
-.selector,
-.name.tag.css,
-.name.tag.postcss,
+.syntax--selector,
+.syntax--name.syntax--tag.syntax--css,
+.syntax--name.syntax--tag.syntax--postcss,
 
-.attribute.css,
-.attribute.postcss,
+.syntax--attribute.syntax--css,
+.syntax--attribute.syntax--postcss,
 
-.attribute-name.css,
-.attribute-name.postcss,
+.syntax--attribute-name.syntax--css,
+.syntax--attribute-name.syntax--postcss,
 
-.attribute-value.css,
-.attribute-value.postcss {
+.syntax--attribute-value.syntax--css,
+.syntax--attribute-value.syntax--postcss {
   // entity other attribute-name class css
   // this will select classes in proprocessors too
   // .test();
   color: @selector-color;
   font-style: @selector-fontstyle;
   font-weight: @selector-weight;
+}
+
+
+// This is a fix for () and [] brackets in CSS files
+// This aren't selected as punctuation UGH
+.syntax--source.syntax--css {
+  color: @punctuation-color;
+  font-weight: @punctuation-weight;
 }
 
 
@@ -34,7 +42,7 @@
 //   Stylus - {} and all properties and their values
 //   Vue - {} and all properties and their values
 //   YAML - Nothing
-.property-list {
+.syntax--property-list {
   // .test();
 }
 
@@ -44,7 +52,7 @@
 //   SCSS - Property name
 //   Stylus - Property name
 //   Less - Property name
-.property-name {
+.syntax--property-name {
   // .test();
   color: @propertyname-color;
   font-style: @propertyname-fontstyle;
@@ -69,8 +77,8 @@
 //   Vue - Nothing
 //   YAML - Nothing
 
-.constant.property-value,
-.constant.css {
+.syntax--constant.syntax--property-value,
+.syntax--constant.syntax--css {
   // .test();
   color: @propertyvalue-color;
   font-style: @propertyvalue-fontstyle;
@@ -96,7 +104,7 @@
 
 // .keyword and unit collide so both have to be specified
 
-.keyword.unit {
+.syntax--keyword.syntax--unit {
   // .test();
   color: @unit-color;
   font-style: @unit-fontstyle;
@@ -105,12 +113,16 @@
 
 
 // Selects pseudo-selectors
-.pseudo-element.css,
-.pseudo-class.css,
-.pseudo-element.scss,
-.pseudo-class.scss {
+.syntax--pseudo-element.syntax--css,
+.syntax--pseudo-class.syntax--css,
+.syntax--pseudo-element.syntax--scss,
+.syntax--pseudo-class.syntax--scss {
   //.test();
   color: @pseudo-color;
   font-style: @pseudo-fontstyle;
   font-weight: @pseudo-weight;
+}
+
+.syntax--variable > .syntax--string.syntax--scss {
+  color: @string-color;
 }
