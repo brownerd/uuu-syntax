@@ -1,6 +1,6 @@
 # uuu syntax-theme
 
-Make UR own AWMS syntax-theme easily.
+Make the syntax-theme UUU want.
 
 Just watch this [video]()
 
@@ -9,7 +9,7 @@ Just watch this [video]()
 - Install [uuu-ui]() and activate it
 - Install [uuu]() and activate it
 - Install [uuu-language-files]()
-- Help build a Theme Library [uraswm.com]()
+
 - Click on the gear icon to access settings for uuu-syntax
 - Style away!
 
@@ -32,30 +32,12 @@ If your style doesn't show, or it if looks like all the styles reverted to the d
 ## Import/Export
 At some point you will want to export, import and save your cool, clever and quickly made syntaxes. You will need [uuu]() installed. Follow instructions there for exporting and importing.
 
-
-
 ![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
-
-## Extras!
-
-**uuu-UI**
-If you want to edit uuur UI also, then install [uuu-UI]() and enjoy the same freedom to edit uuu UI also.
-
-**uuu**
-If you want to export and import your Syntaxes and UIs, then install [uuu-helper]().
-
-**File icons**
-I got these from [File Icons](https://atom.io/packages/file-icons).
-
-**PlatformIO IDE Terminal**
-If you like your Terminal in your Atom editor check out [Platformio IDE Termina](https://atom.io/packages/platformio-ide-terminal).
-
-**Monoid Font**
-If you want more from a monospaced font, check out [Monoid](https://larsenwork.com/monoid/).
 
 
 ## Notes:
 uuu-UI, lets you modify just about everything that it can. However, it can't cover EVERY possible plugin that you are using.
+
 
 ## Issues/Requests
 If there is a special case that you need, then let me know. I can't promise that I can make an update, but I will look at the ticket and respond.
