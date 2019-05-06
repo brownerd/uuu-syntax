@@ -16,7 +16,7 @@ Run the line below in your terminal to  install all dependencies
 `apm install uuu-ui uuu-syntax uuu-kit`
 
 
-## Make themese quickly
+## Make themes quickly
 
 Here are a few examples:
 
