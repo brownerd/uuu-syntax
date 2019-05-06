@@ -1,5 +1,6 @@
 {
   "resetAllStyles": {
+    "order": 37,
     "type": "object",
     "title": "Reset",
     "properties": {
@@ -36,21 +37,14 @@
     "type": "object",
     "title": "Gutter",
     "properties": {
-      "backgroundcolor": {
-        "order": 1,
-        "title": "Set background color",
-        "description": "Selects**: Gutter and line numbers",
-        "type": "color",
-        "default": "rgba(179, 179, 179, 1)"
-      },
       "color": {
-        "order": 2,
+        "order": 1,
         "title": "Line number color",
         "type": "color",
         "default": "rgba(51, 51, 51, 1)"
       },
       "value": {
-        "order": 3,
+        "order": 2,
         "title": "Line number Darkness / Lightness",
         "description": "**Value range**: -100 thru 100",
         "type": "number",
@@ -59,9 +53,9 @@
         "maximum": 100
       },
       "punk": {
-        "order": 4,
+        "order": 3,
         "title": "Punk gutter",
-        "description": "For devs with attitudes!",
+        "description": "Spike out your gutter!",
         "type": "string",
         "enum": ["hellyeah", "hellno"],
         "default": "hellyeah"
@@ -768,7 +762,7 @@
      "color": {
        "order": 1,
        "title": "Set text color",
-       "description": "**Languages**: Programming langs<br/>**Selects**: the name of a conatant that is created by the user or the programming language",
+       "description": "**Languages**: Programming langs<br/>**Selects**: the name of a constant that is created by the user or the programming language",
        "type": "color",
        "default": "rgba(51, 51, 51, 1)"
      },
@@ -922,6 +916,7 @@
     }
   },
   "gitgutter": {
+    "order": 36,
    "type": "object",
    "title": "Git gutter",
    "properties": {
@@ -935,14 +930,12 @@
      "linemodifiedcolor": {
        "order": 2,
        "title": "Line modified color",
-       "type": "string",
        "type": "color",
        "default": "rgba(255, 213, 0, 1)"
      },
      "lineremovedcolor": {
        "order": 3,
        "title": "Line removed color",
-       "type": "string",
        "type": "color",
        "default": "rgba(255, 0, 0, 1)"
       }

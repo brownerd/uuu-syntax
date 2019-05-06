@@ -9,13 +9,13 @@
 
 
 // .raw selects the `` inline code
-.raw {
+.syntax--raw {
   //.test();
 }
 
 
 // .code selects the large ``` ``` code-blocks
-.code {
+.syntax--code {
   //.test();
 }
 
@@ -27,30 +27,30 @@
 
 
 // This doesn't seem to select anything
-.heading {
+.syntax--heading {
   color: @tag-color;
   font-style: @tag-fontstyle;
   font-weight: @tag-weight;
 }
 
-.heading-1 {}
-.heading-2 {}
+.syntax--heading-1 {}
+.syntax--heading-2 {}
 
-[class*="heading-"] {}
+[class*="syntax--heading-"] {}
 
-.unordered {}
+.syntax--unordered {}
 
-.list {}
+.syntax--list {}
 
-.hr {}
+.syntax--hr {}
 
 
-.bold {
+.syntax--bold {
   //.test();
   font-weight: bold;
 }
 
-.italic {
+.syntax--italic {
   //.test();
   font-style: italic;
 }

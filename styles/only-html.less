@@ -4,7 +4,7 @@
 //   SCSS - none
 //   Stylus - none
 //   HTML - All html code
-//   Jade - none
+//   Jade, PUG - none
 //   JS - none
 //   JSON - none
 //   MD - none
@@ -12,7 +12,7 @@
 //   Vue - none
 //   YAML - none
 
-.basic {
+.syntax--basic {
   // .test();
 }
 
@@ -21,14 +21,15 @@
 
 
 // .any selects full HTML tags <></>
-.any {
+.syntax--any {
   // .test();
 }
 
 // Selects Doctype
-.tag.doctype.html,
-.comment.doctype.jade,
-.doctype.sugarml {
+.syntax--tag.syntax--doctype.syntax--html,
+.syntax--comment.syntax--doctype.syntax--jade,
+.syntax--comment.syntax--doctype.syntax--pug,
+.syntax--doctype.syntax--sugarml {
   //.test();
   color: @doctype-color;
   font-style: @doctype-fontstyle;
@@ -36,22 +37,22 @@
 }
 
 
-
-.tag.html,
-.tag.jade,
-.tag.yaml,
-.tag.slim,
-.tag.haml,
-.tag.sugarml {
+.syntax--tag.syntax--html,
+.syntax--tag.syntax--jade,
+.syntax--tag.syntax--pug,
+.syntax--tag.syntax--yaml,
+.syntax--tag.syntax--slim,
+.syntax--tag.syntax--haml,
+.syntax--tag.syntax--sugarml {
   //.test();
   color: @tag-color;
   font-style: @tag-fontstyle;
   font-weight: @tag-weight;
 }
 
-.attribute-name.html,
-.attribute-name.sugarml,
-.attribute-name.haskell {
+.syntax--attribute-name.syntax--html,
+.syntax--attribute-name.syntax--sugarml,
+.syntax--attribute-name.syntax--haskell {
   //.test();
   color: @attributename-color;
   font-style: @attributename-fontstyle;
@@ -59,8 +60,19 @@
 }
 
 // .inline selects inline elements only
-.inline {
+.syntax--inline {
   //.test();
+}
+
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--tag.syntax--jade,
+.syntax--entity.syntax--other.syntax--attribute-name.syntax--tag.syntax--pug {
+  font-weight: @attributename-weight;
+}
+
+
+.syntax--punctuation.syntax--definition.syntax--html,
+.syntax--punctuation.syntax--definition.syntax--html {
+  //background-color: @cursor-color;
 }
 
 // HTML

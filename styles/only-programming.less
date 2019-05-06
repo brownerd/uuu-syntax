@@ -2,9 +2,9 @@
 
 
 
-.module,
-.meta.using.cs,
-.storage.import.java {
+.syntax--module,
+.syntax--meta.syntax--using.syntax--cs,
+.syntax--storage.syntax--import.syntax--java {
   // .test();
   color: @module-color;
   font-style: @module-fontstyle;
@@ -18,7 +18,7 @@
 // .keyword.py
 
 
-.namespace {
+.syntax--namespace {
   color: @namespace-color;
   font-style: @namespace-fontstyle;
   font-weight: @namespace-weight;
@@ -38,7 +38,7 @@
 //   Vue - Nothing
 //   YAML - :
 
-.constant {
+.syntax--constant {
   // .test();
   color: @constant-color;
   font-weight: @constant-weight;
@@ -46,7 +46,7 @@
 
 
 
-.constant.boolean {
+.syntax--constant.syntax--boolean {
   // .test();
   color: @boolean-color;
   font-style: @boolean-fontstyle;
@@ -56,7 +56,7 @@
 
 
 // Check only-html.less for use of this class
-.attribute-name {
+.syntax--attribute-name {
   // .test();
 }
 
@@ -74,16 +74,16 @@
 //   Vue - Nothing
 //   YAML - Nothing
 
-.name.type.cpp,
-.type.haskell,
-.type.elm {
+.syntax--name.syntax--type.syntax--cpp,
+.syntax--type.syntax--haskell,
+.syntax--type.syntax--elm {
   // .test();
   color: @type-color;
   font-style: @type-fontstyle;
   font-weight: @type-weight;
 }
 
-.identifier.haskell {
+.syntax--identifier.syntax--haskell {
   // .test();
   color: @identifier-color;
   font-style: @identifier-fontstyle;
@@ -96,12 +96,12 @@
 
 // .object selects commas in an object and the object name before the delimiter
 // like object.thing in JS
-.object {
+.syntax--object {
   //.test();
 }
 
 
-.array {
+.syntax--array {
   //.test();
 }
 
@@ -109,7 +109,7 @@
 
 
 //.body selects the function bodies Curly Brackets {}
-.body {
+.syntax--body {
   //.test();
 }
 
@@ -121,29 +121,29 @@
 //   Stylus - false, true, null
 //   JS - false, true, null
 //   PHP - false, true, null
-.language {
+.syntax--language {
   //.test();
 }
 
 
 // selects false and true
-.boolean {
+.syntax--boolean {
   //.test();
 }
 
 
 // selects true
-.true {}
+.syntax--true {}
 
 
 // selects false
-.false {}
+.syntax--false {}
 
 
 
 // Source will select everything that is source code of a specified grammar
 // It's a way to also set a base color for all grammars
-.source {
+.syntax--source {
   color: @editor-color;
 }
 
@@ -169,7 +169,7 @@
 
 
 // I'm not sure that I need to style with this yet
-.meta {}
+.syntax--meta {}
 
 
 
@@ -188,7 +188,7 @@
 //   Vue - Selector name, tag name,function name
 //   YAML - Property names
 
-.entity {
+.syntax--entity {
   // .test();
 }
 
@@ -211,7 +211,7 @@
 //   Vue - Tag name, Function name, Selector name
 //   Yaml - Property name
 
-.name {
+.syntax--name {
   // .test();
 }
 
@@ -232,7 +232,7 @@
 //   Vue - Selector name, tag name,function name
 //   YAML - Property names
 
-.tag {
+.syntax--tag {
   // .test();
 }
 
@@ -253,7 +253,7 @@
 //   Vue - {} on style sections
 //   YAML - Nothing
 
-.section {
+.syntax--section {
   // .test();
 }
 
@@ -273,7 +273,7 @@
 //   Vue - {} on style sections
 //   YAML - Nothing
 
-.support {
+.syntax--support {
   // .test();
 }
 
@@ -285,6 +285,6 @@
 
 
 
-.modifier {
+.syntax--modifier {
   //.test();
 }

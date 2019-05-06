@@ -3,12 +3,12 @@
   "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
-  "description": "A hackable syntax theme that UUU can style",
+  "description": "ake the syntax styles UUU want in seconds!",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/uuu-syntax",
+  "repository": "",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"

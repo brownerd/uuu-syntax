@@ -1,10 +1,10 @@
 
-// .operator selects
+// .syntax--operator selects
 //   SCSS - on, >, <, in, or, ==, !==
 //   Stylus - in, not, or, is, +, *, ?=, and
-.operator,
-.keyword.operator,
-.keyword.operator.java {
+.syntax--operator,
+.syntax--keyword.syntax--operator,
+.syntax--keyword.syntax--operator.syntax--java {
   //.test();
   color: @operator-color;
   font-style: normal;
@@ -14,7 +14,7 @@
 
 // .logical selects
 //   JS - !, &&, ||
-.logical {
+.syntax--logical {
   //.test();
   color: @operator-color;
   font-style: normal;
@@ -25,7 +25,7 @@
 
 
 // .typeof selects typeof in JS
-.typeof {
+.syntax--typeof {
   //.test();
   color: @operator-color;
   font-style: italic;
@@ -35,7 +35,7 @@
 
 
 // .comparison selests >, <, ==, !==
-.comparison {
+.syntax--comparison {
   //.test();
   color: @operator-color;
   font-style: normal;

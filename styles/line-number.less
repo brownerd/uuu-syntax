@@ -2,29 +2,36 @@
 // cursor line
 // folded
 
-.line-number {
+div.line-number {
+  overflow: hidden;
   padding-right: 1rem;
 
   &.cursor-line {
 
-    & when (@gutter-punk = hellyeah) {
-      background-color: @selectedline-backgroundguttercolor;
-    }
+    // & when (@gutter-punk = hellyeah) {
+    //   background-color: @selectedline-backgroundguttercolor;
+    // }
 
-    color: @selectedline-backgroundcolor;
+    background-color: @selectedline-backgroundguttercolor;
+
+    // The contrast function is cool
+    // You give it a base color and it will
+    // create a lighter or darker color to contrast the base color
+    color: contrast(@selectedline-backgroundguttercolor);
     position: relative;
 
 
     & when (@gutter-punk = hellyeah) {
       // PUNK GUTTER > Triangle indicator
       &:after {
-        border-color: @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundcolor @selectedline-backgroundguttercolor;
+        border-color: @editor-backgroundcolor @editor-backgroundcolor @editor-backgroundcolor @selectedline-backgroundguttercolor;
         content: "";
         height: 1px;
-        border-width: .75em; //1rem
+        //border-width: .7rem; //1rem
+        border-width: .8em;
         border-style: solid;
         position: absolute;
-        transform: translate(5px, 0px);
+        // transform: translate(5px, 0px);
       }
     }
   }
@@ -53,3 +60,11 @@
 }
 
 // .gutter .line-number.folded .icon-right::before, .gutter:hover .line-number.folded .icon-right::before
+
+
+atom-text-editor .line-number {
+  // padding-left: .5em;
+  // white-space: nowrap;
+  opacity: 1; //0.6;
+  // position: relative;
+}

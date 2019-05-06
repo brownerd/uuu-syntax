@@ -3,8 +3,8 @@
 
 // .quoted selects anything in double or single quotes including the quotation marks
 
-.string {
-  &.quoted {
+.syntax--string {
+  &.syntax--quoted {
     //.test();
     color: @string-color;
     font-style: @string-fontstyle;
@@ -13,7 +13,7 @@
 
 
   // .double selects anything in double quotes including the quotation marks
-  &.double {
+  &.syntax--double {
     //.test();
     color: @string-color;
     font-style: @string-fontstyle;
@@ -22,14 +22,14 @@
 
 
   // .single selects anything in single quotes including the quotation marks
-  &.single {
+  &.syntax--single {
     //.test();
     color: @string-color;
     font-style: @string-fontstyle;
     font-weight: @string-weight;
   }
 
-  &.unquoted {
+  &.syntax--unquoted {
     color: @editor-color;
     font-style: normal;
     font-weight: normal;
@@ -38,8 +38,8 @@
 
 
 // Not all syntaxes let you select the quotation marks alone
-.punctuation.definition.string.begin,
-.punctuation.definition.string.end  {
+.syntax--punctuation.syntax--definition.syntax--string.syntax--begin,
+.syntax--punctuation.syntax--definition.syntax--string.syntax--end  {
   color: @quotationmark-color;
   font-weight: @quotationmark-weight;
 }
