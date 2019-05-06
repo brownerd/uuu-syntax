@@ -7,8 +7,8 @@ Just watch this [video]()
 ## Installation/Dependencies
 - Install [uuu-syntax]() and activate it
 - Install [uuu-ui]() and activate it
-- Install [uuu]() and activate it
-- Install [uuu-language-files]()
+- Install [uuu-kit]() and activate it
+- Download [uuu-languages]()
 
 - Click on the gear icon to access settings for uuu-syntax
 - Style away!
