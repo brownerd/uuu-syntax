@@ -1,5 +1,6 @@
 {
   "name": "uuu-syntax",
+  "author": "brownerd <ben@brownerd.com>",
   "main": "./lib/main",
   "theme": "syntax",
   "version": "0.0.0",
@@ -8,7 +9,7 @@
     "syntax",
     "theme"
   ],
-  "repository": "",
+  "repository": "https://github.com/brownerd/uuu-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
